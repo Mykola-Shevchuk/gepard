@@ -1,0 +1,16 @@
+.b-software {
+  height: 500px;
+  background: url("../resources/img/content-syndicator-software.webp") no-repeat right top;
+  background-size: cover;
+
+  &__item {
+    width: 100%;
+  }
+  
+  &__item-title {
+    line-height: initial;
+    font-size: 20px;
+    padding-left: 10px;
+    vertical-align: top;
+  }
+}

@@ -1,128 +1,143 @@
-.b-case{
-    position: relative;
-    
-    &__pic{
-        display: block;
-        img{
-            min-height: 250px;
-            width: 100%;
-            object-fit: cover;
-            font-family: 'object-fit:cover';
-            
-//            @include media('<tabletSm'){
-//                object-position: right;
-//                font-family: 'object-fit:cover;object-position:right';
-//            }
-        }
-    }
-    &__container{
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        
-        @include media('<tabletSm'){
-            position: static;
-            padding: 20px 0 40px;
-        }
-    }
-    &__wr{
-        @extend %wrapper_narrow;
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-    &__content{
-//        margin: 0 70px;
-        margin: 0 6%;
-        width: 305px;
-        
-        @include media('<desktop'){
-            margin: 0 43px;
-            width: 262px;
-        }
-        @include media('<tabletSm'){
-            margin: 0;
-            width: 100%;
-        }
-    }
-    &__common{
-        margin-bottom: 20px;
-        display: flex;
-        align-items: center;
-//        color: $active;
-        
-        @include media('<desktop'){
-            margin-bottom: 10px;
-        }
-    }
-    &__logo{
-        margin-right: 10px;
-        height: 40px;
-        
-        @include media('ie'){
-            width: 40px;
-        }
-    }
-    &__title{
-        margin-bottom: 40px;
-        text-transform: uppercase;
-        line-height: 1.1;
-        font-size: 22px;
-        font-weight: 500;
-        color: $active;
-        
-        @include media('<desktop'){
-            margin-bottom: 20px;
-            font-size: 18px;
-        }
-        @include media('<tabletSm'){
-            line-height: 1.2;
-            font-size: 21px;
-        }
-        
-        &_common{
-            font-family: 'Caveat', cursive;
-            line-height: 1.1;
-            font-size: 30px;
-            color: $active;
-        }
-    }
-    
-    &_reverse{
-        .b-case{
-//            &__pic{
-//                img{
-//                    @include media('<tabletSm'){
-//                        object-position: left;
-//                        font-family: 'object-fit:cover;object-position:left';
-//                    }
-//                }
-//            }
-            &__wr{
-                flex-direction: row-reverse;
-            }
-        }
-    }
-    &_dark{
-        .b-case{
-//            &__common{
-//                color: 
-//                $gradient__dark_end;
-//            }
-            &__title{
-                color: $gradient__dark_end;
+.b-case {
+  position: relative;
 
-                &_common{
-                    color: $gradient__dark_end;
-                }
-            }
-        }
+  &__pic {
+    display: block;
+    img {
+      min-height: 250px;
+      width: 100%;
+      object-fit: cover;
+      font-family: 'object-fit:cover';
+
+      //            @include media('<tabletSm'){
+      //                object-position: right;
+      //                font-family: 'object-fit:cover;object-position:right';
+      //            }
     }
-    .b-btn{
-        @include media('<tabletSm'){
-            width: 100%;
-        }
+  }
+  &__container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    @include media('<tabletSm') {
+      position: static;
+      padding: 20px 0 40px;
     }
+  }
+  &__wr {
+    @extend %wrapper_narrow;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__content {
+    //        margin: 0 70px;
+    margin: 0 6%;
+    width: 305px;
+
+    @include media('<desktop') {
+      margin: 0 43px;
+      width: 262px;
+    }
+    @include media('<tabletSm') {
+      margin: 0;
+      width: 100%;
+    }
+  }
+  &__common {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    //        color: $active;
+
+    @include media('<desktop') {
+      margin-bottom: 10px;
+    }
+  }
+  &__logo {
+    margin-right: 10px;
+    height: 40px;
+
+    @include media('ie') {
+      width: 40px;
+    }
+  }
+  &__title {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    font-size: 22px;
+    font-weight: 500;
+    color: $active;
+
+    @include media('<desktop') {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    @include media('<tabletSm') {
+      line-height: 1.2;
+      font-size: 21px;
+    }
+
+    &_common {
+      font-family: 'Caveat', cursive;
+      line-height: 1.1;
+      font-size: 30px;
+      color: $active;
+    }
+  }
+
+  &_reverse {
+    .b-case {
+      //            &__pic{
+      //                img{
+      //                    @include media('<tabletSm'){
+      //                        object-position: left;
+      //                        font-family: 'object-fit:cover;object-position:left';
+      //                    }
+      //                }
+      //            }
+      &__wr {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  &_dark {
+    .b-case {
+      //            &__common{
+      //                color: 
+      //                $gradient__dark_end;
+      //            }
+      &__title {
+        color: $gradient__dark_end;
+
+        &_common {
+          color: $gradient__dark_end;
+        }
+      }
+    }
+  }
+  .b-btn {
+    @include media('<tabletSm') {
+      width: 100%;
+    }
+  }
+}
+
+.b-case-syndicator {
+  &__desc {
+    margin: 0;
+    
+    & svg {
+      fill: $active;
+    }
+
+    & p {
+      font-weight: 500;
+      color: $grey_about;
+    }
+  }
 }

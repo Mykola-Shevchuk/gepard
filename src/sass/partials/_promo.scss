@@ -120,3 +120,21 @@
         }
     }
 }
+
+.b-promo-syndicator {
+    color: $white;
+    
+    @include gradient__active_angled;
+
+    &:hover{
+        .b-promo{
+            &__title{
+                color: $white;
+            }
+        }
+    }
+    
+    &__title {
+        color: $white;
+    }
+}

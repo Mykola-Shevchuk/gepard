@@ -80,3 +80,14 @@
         }
     }
 }
+
+.b-badge-syndicator {
+    padding-bottom: 70px;
+    
+    &__title {
+        text-align: center;
+        font-size: 22px;
+        font-weight: 500;
+        padding: 20px 0 70px 0;
+    }
+}

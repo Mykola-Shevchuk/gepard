@@ -6,6 +6,11 @@
             background-image: url(../resources/img/targets-bg-left-top.webp), url(../resources/img/targets-bg-right-top.webp), url(../resources/img/targets-bg-right-bottom.webp), url(../resources/img/targets-bg-left-bottom.webp);
         }
     }
+
+    .b-target-transformation {
+      background: url(../resources/img/transformation.webp) no-repeat center center;
+      background-size: cover;
+    }
 }
 .no-webp{
     .b-targets{
@@ -14,6 +19,11 @@
         @include media('<desktop'){
             background-image: url(../resources/img/targets-bg-left-top.jpg), url(../resources/img/targets-bg-right-top.jpg), url(../resources/img/targets-bg-right-bottom.jpg), url(../resources/img/targets-bg-left-bottom.jpg);
         }
+    }
+
+    .b-target-transformation {
+      background: url(../resources/img/transformation.jpg) no-repeat center center;
+      background-size: cover;
     }
 }
 
@@ -144,4 +154,42 @@
             }
         }
     }
+}
+
+.b-target-transformation {
+  position: relative;
+  padding: 37px 0 60px;
+
+  &__title {
+    margin-bottom: 0;
+  }
+  
+  &__subtitle {
+    text-align: center;
+    padding: 10px 0 50px 0;
+  }
+  
+  &__icon-rotated {
+    transform: rotate(-40deg);
+  }
+  
+  &__bottom-title {
+    text-align: center;
+    margin-top: 50px;
+    
+    p {
+      padding: 5px;
+      font-size: 22px;
+      background-image: linear-gradient(
+              to left,
+              rgba($bg_light, 0) 0%,
+              rgba($bg_light, 0.9) 20%,
+              rgba($bg_light, 0.95) 25%,
+              rgba($bg_light, 1) 30%,
+              rgba($bg_light, 0.95) 75%,
+              rgba($bg_light, 0.9) 80%,
+              rgba($bg_light, 0) 100%
+      ),;
+    }
+  }
 }
