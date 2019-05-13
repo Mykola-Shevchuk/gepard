@@ -1,0 +1,82 @@
+.b-badge{
+    margin: 0 15px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(25% - 30px);
+    padding: 0 30px;
+    text-align: center;
+    
+    @include media('<desktop'){
+        padding: 0;
+    }
+    @include media('<tabletLg'){
+        margin-bottom: 50px;
+        width: calc(50% - 30px);
+        padding: 0 calc(10% - 5px);
+    }
+    
+    @include media('<tabletSm'){
+        margin: 0 0 50px;
+        width: 280px;
+        padding: 0;
+    }
+    
+    
+    &s{
+        padding: 55px 0 0;
+        
+        @include media('<desktop'){
+            padding: 55px 0 20px;
+        }
+        @include media('<tabletLg'){
+            padding: 60px 0 10px;
+        }
+        
+        &__wr{
+            @extend %wrapper;
+            display: flex;
+            flex-wrap: wrap;
+            
+            @include media('<desktop'){
+//                margin: 0 -15px;
+            }
+            @include media('<tabletSm'){
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+            }
+        }
+    }
+    
+    &__img{
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        border: 1px solid $grey_about;
+        
+        @include media('<tabletLg'){
+            margin-bottom: 20px;    
+        }
+        
+        svg{
+            fill: $active;
+        }
+    }
+    &__title{
+        font-size: 22px;
+        color: $black;
+    }
+    &__descr{
+        font-weight: 500;
+        color: $grey_about;
+        
+        @include media('ie'){
+            width: 100%;
+        }
+    }
+}

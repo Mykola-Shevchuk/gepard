@@ -1,0 +1,86 @@
+// include media defaults
+$breakpoints: (
+  'phoneSm': 320px,
+//  'phoneMd': 376px,
+  'phoneLg': 480px,
+  'tabletSm': 768px,
+  'tabletLg': 1024px,
+  'desktop': 1280px,
+  'laptop': 1366px,
+  'hd': 1920px,
+);
+
+$media-expressions: (
+  'screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x': '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)',
+  'retina3x': '(-webkit-min-device-pixel-ratio: 3), (min-resolution: 350dpi), (min-resolution: 3dppx)',
+  'ie': 'all and (-ms-high-contrast: none), (-ms-high-contrast: active)'
+);
+
+
+// Colours:
+$black:                 #000000;
+$checked:               #e64c37;
+$active:                #00b39e;
+$gradient__active_start:#78cba2;
+$gradient__active_end:  $active;
+$gradient__dark_start:  #423445;
+$gradient__dark_end:    #2d1b30;
+$bg_light:              #ededed;
+$bg_dark:               #221724;
+$text_light:            #e9e8e9;
+$grey_about:            #8a8a8a;
+$text_grey:             #949494;
+$text_dark:             #777578;
+$white:                 #FFFFFF;
+
+$popup__bg_success:     #c7f2e5;
+$popup__bg_error:       #ffe5e5;
+$popup__fill_success:   #63bfb0;
+$popup__fill_error:     #ff8e8e;
+$popup__text_success:   $black;
+$popup__text_error:     #ff0000;
+
+$header__height_desktop:            114px;
+$header__height_desktop-scrolled:   78px;
+$header__height_tablet:             65px;
+$gradient_angle:        36deg;
+
+// Transitions:
+$time_trans:        0.3s;
+$time_trans_long:   0.6s;
+
+%wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 17px;
+    padding-right: 17px;
+    max-width: 1280px;
+    
+    &_narrow{
+        @extend %wrapper;
+        max-width: 1160px;
+    }
+}
+
+@mixin gradient__active_angled( $angle: $gradient_angle,
+                                $gradient__start_color:  $gradient__active_start,
+                                $gradient__end_color:    $gradient__active_end){
+    background-image: linear-gradient($angle, $gradient__start_color, $gradient__end_color);
+}
+%gradient__active_angled{
+    @include gradient__active_angled;
+}
+
+@mixin gradient__dark_angled(   $angle: $gradient_angle,
+                                $gradient__start_color:  $gradient__dark_start,
+                                $gradient__end_color:    $gradient__dark_end){
+    background-image: linear-gradient($angle, $gradient__start_color, $gradient__end_color);
+}
+%gradient__dark_angled{
+    @include gradient__dark_angled;
+}

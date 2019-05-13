@@ -1,0 +1,175 @@
+.b-office{
+    position: relative;
+    margin: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    width: 286px;
+    color: $text_grey;
+    background-color: $white;
+    box-shadow: 0 0 30px rgba($black, 0.22);
+    transition: color $time_trans, box-shadow $time_trans;
+        
+    @include media('<desktop'){
+        margin: 0 16px 30px;
+    }
+    @include media('<tabletSm'){
+        margin: 0 0 17px;
+//        width: 100%;
+    }
+
+    &:hover{
+        color: $white;
+        box-shadow: 0 0 30px rgba($black, 0.4);
+        
+        .b-office__wr_content{
+            &:before{
+                opacity: 1;
+            }
+        }
+        .b-office__title{
+            color: $white;
+        }
+    }
+    
+    &__img{
+        width: 100%;
+    }
+
+    &__wr_content{
+        flex-grow: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;right: 0;bottom: 0;left: 0;
+            @include gradient__dark_angled;
+            opacity: 0;
+            transition: opacity $time_trans;
+        }
+    }
+    &__content{
+        flex-grow: 1;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 30px 50px;
+        
+        @include media('<desktop'){
+            padding: 40px 30px 25px;
+        }
+    }
+
+    &__header{
+        position: relative;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 60px;
+        padding-bottom: 10px;
+            
+        @include media('<tabletSm'){
+            margin-bottom: 5px;
+        }
+    }
+
+    &__wr_icon{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 60px;
+        height: 41px;
+        color: $active;
+        transition: color $time_trans;
+        
+        svg{
+            fill: currentColor;
+        }
+    }
+
+    &__wr_logo{
+        line-height: 0;
+        
+        svg{
+            fill: $active;
+        }
+    }
+    
+    &__title{
+        text-transform: uppercase;
+        line-height: 1;
+        font-size: 22px;
+        color: $black;
+        transition: color $time_trans;
+    }
+
+    &__addr{
+        margin-bottom: 35px;
+        max-width: 100%;
+        font-weight: 500;
+            
+        @include media('<tabletSm'){
+            margin-bottom: 15px;
+        }
+    }
+
+    &__email{
+        margin-top: auto;
+        max-width: 100%;
+        font-weight: 500;
+    }
+    
+    &s{
+        position: relative;
+        padding: 50px 0;
+        @include gradient__active_angled;
+        
+        @include media('<desktop'){
+            padding-bottom: 50px;
+        }
+        @include media('<tabletSm'){
+            padding: 55px 0 30px;
+        }
+        
+        &__wr{
+            @extend %wrapper;
+        }
+        &__title{
+            margin: 0 auto 45px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 22px;
+            font-weight: 500;
+            color: $white;
+            
+            @include media('<tabletSm'){
+                margin-bottom: 35px;
+                line-height: normal;
+            }
+        }
+        &__container{
+//            margin: 0 -15px;
+            margin: 0 auto;
+            display: flex;
+//            justify-content: space-around;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            @include media('<desktop'){
+                justify-content: center;
+                max-width: 800px;
+            }
+            @include media('<tabletSm'){
+                flex-direction: column;
+                align-items: center;
+//                margin: 0;
+                max-width: 320px;
+            }
+        }
+    }
+}

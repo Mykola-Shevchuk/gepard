@@ -1,0 +1,122 @@
+.b-promo{
+    position: relative;
+    min-height: 259px;
+    padding: 95px 0 100px;
+        
+    @include media('<desktop'){
+        min-height: 0;
+        padding: 60px 0 75px;
+    }
+    
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0;
+        transition: opacity $time_trans;
+        @extend %gradient__dark_angled;
+    }
+    &__wr{
+        @extend %wrapper_narrow;
+        
+        @include media('<desktop'){
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        
+        @include media('<tabletSm'){
+            padding-left: 17px;
+            padding-right: 17px;
+        }
+    }
+    &__form{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        @include media('<desktop'){
+//            margin-left: -16px;
+//            margin-right: -16px;
+        }
+        
+        .b-wr_input{
+            margin: 0 25px;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            border-color: $active;
+            
+            @include media('<desktop'){
+                margin-left: 0;
+                margin-right: 16px;
+                width: calc(50% - 16px);
+            }
+            @include media('<tabletSm'){
+                margin: 0 0 20px;
+                
+                width: 100%;
+            }
+        }
+        
+        .b-btn{
+            min-width: 284px;
+            
+            @include media('<desktop'){
+                flex-grow: 1;
+                margin-left: 16px;
+                margin-right: 0;
+                width: calc(50% - 16px);
+            }
+            @include media('<tabletSm'){
+                margin-right: 0;
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+        
+        .b-form__popup{
+            position: absolute;
+            left: 0;
+            top: calc(100% + 22px);
+            width: 100%;
+        
+            @include media('<desktop'){
+                top: calc(100% + 10px);
+            }
+        }
+    }
+    &__title{
+        font-size: 22px;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: color $time-trans;
+        
+        @include media('<desktop'){
+            margin-bottom: 15px;
+            width: 100%;
+            text-align: center;
+        }
+        @include media('<tabletSm'){
+            margin-bottom: 25px;
+        }
+    }
+    
+    
+    &:hover{
+        &:before{
+            opacity: 1;
+        }
+        
+        .b-promo{
+            &__title{
+                color: $white;
+            }
+        }
+    }
+}

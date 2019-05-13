@@ -1,0 +1,90 @@
+.b-responce{
+    padding: 20px 0 40px;
+    text-align: center;
+    &__wr{
+        margin: 0 auto;
+        max-width: 860px;
+        width: 100%;
+        padding: 0 55px;
+        
+        @include media('<tabletSm'){
+            padding: 0;
+        }
+    }
+    &__face{
+        margin: 0 auto 20px;
+        border-radius: 50%;
+        width: 108px;
+        height: 108px;
+        object-fit: cover;
+        font-family: 'object-fit: cover';
+    }
+    &__text{
+        margin-bottom: 26px;
+        position: relative;
+        color: $text_grey;
+        font-weight: 500;
+        user-select: none;
+        
+        @include media('<tabletSm'){
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        
+        &:before{
+            content: "";
+            position: absolute;
+            left: 25px;
+            bottom: calc(100% + 30px);
+            width: 22px;
+            height: 19px;
+            background-image: #{url64('src/resources/img/base64/quote.png')};
+            
+            @include media('<tabletSm'){
+                content: none;
+            }
+        }
+    }
+    &__position{
+        display: block;
+        font-weight: 500;
+        user-select: none;
+        
+        @include media('<tabletSm'){
+            margin-bottom: 20px;    
+        }
+    }
+    &__name{
+        display: block;
+        line-height: normal;
+        font-size: 30px;
+        letter-spacing: .04em;
+        color: $active;
+        font-family: 'Caveat', cursive;
+        user-select: none;
+    }
+    
+    &s{
+        position: relative;
+        padding: 40px 0 55px;
+        &__wr{
+            @extend %wrapper;
+//            overflow: hidden;
+        }
+        &__slider{
+            &:not(.tns-slider){
+                > .b-responce{
+                    &:nth-child(n+2){
+                        display: none;
+                    }
+                }
+            }
+            &.tns-slider{
+                > .b-responce{
+                    display: inline-block;
+                    cursor: grab;
+                }
+            }
+        }
+    }
+}

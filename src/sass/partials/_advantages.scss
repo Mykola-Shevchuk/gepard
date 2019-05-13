@@ -1,0 +1,108 @@
+.b-advantage{
+//    margin-right: 40px;
+    margin: 0 60px 52px;
+    display: flex;
+    width: calc(50% - 132px);
+//    padding-right: 6%;
+    font-size: 1rem;
+        
+    @include media('<desktop'){
+        margin: 0 28px 40px;
+        width: calc(50% - 56px);
+        font-size: 14px;
+    }
+    @include media('<tabletSm'){
+        margin: 0 0 35px;
+        width: 100%;
+    }
+    
+    &__wr_icon{
+//        margin-left: 48px;
+        margin-right: 28px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100px;
+        padding-top: 0.55em;
+        color: $active;        
+        
+        @include media('<desktop'){
+            margin-right: 18px;
+            width: 50px;    
+        }
+        
+        svg{
+            fill: currentColor;
+        }
+    }
+    &__content{
+        
+    }
+    &__title{
+        text-transform: uppercase;
+        line-height: 1.9;
+        font-size: (18em/16);
+        
+        @include media('<desktop'){
+            text-transform: none;
+            line-height: normal;
+            font-size: 22px;
+        }
+        @include media('<tabletSm'){
+            font-size: 18px;
+        }
+    }
+    &__descr{
+        color: $text_grey;
+        font-size: 14px;
+    }
+    
+    &s{
+        position: relative;
+//        padding: 50px 40px;
+        background-color: $bg_light;
+        
+        &__wr{
+            @extend %wrapper_narrow;
+        }
+        &__container{
+//            padding: 50px 60px;
+            padding: 50px 0 35px;
+        
+            @include media('<desktop'){
+                padding-bottom: 20px;
+            }
+            @include media('<tabletSm'){
+                padding-top: 40px;
+            }
+        }
+        &__title{
+//            margin-left: 47px;
+            margin-bottom: 67px;
+            font-size: 22px;
+            font-weight: 500;
+            text-transform: uppercase;
+        
+            @include media('<desktop'){
+                margin-bottom: 43px;
+            }
+            @include media('<tabletSm'){
+                margin-bottom: 30px;
+                padding-left: 68px;
+            }
+        }
+        &__content{
+            margin: 0 -60px;
+            display: flex;
+            flex-wrap: wrap;
+        
+            @include media('<desktop'){
+                margin: 0;
+            }
+            @include media('<tabletSm'){
+                flex-direction: column;
+            }
+        }
+    }
+}

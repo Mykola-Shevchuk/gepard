@@ -1,0 +1,143 @@
+.webp{
+    .b-contactus{
+        background-image: url(../resources/img/contactus-bg.webp);
+    }
+}
+.no-webp{
+    .b-contactus{
+        background-image: url(../resources/img/contactus-bg.jpg);
+    }
+}
+
+.b-contactus{
+    position: relative;
+    padding: 85px 0 53px;
+    background-repeat: no-repeat;
+    background-size: cover;
+        
+    @include media('<desktop'){
+        padding: 50px 0 50px;
+    }
+    
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        @extend %gradient__active_angled;
+        opacity: .85;
+    }
+    
+    &__wr{
+        @extend %wrapper_narrow;
+        position: relative;
+        
+        @include media('<desktop'){
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        
+        @include media('<tabletSm'){
+            padding-left: 17px;
+            padding-right: 17px;
+        }
+    }
+    
+    &__title{
+        margin-bottom: 60px;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 500;
+        
+        @include media('<tabletSm'){
+            margin-bottom: 15px;
+        }
+        
+        &_sub{
+            margin-bottom: 46px;
+            font-size: 22px;
+            font-weight: 500;
+            color: $white;
+
+            @include media('<desktop'){
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__block{
+        &_checkboxes{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        
+            @include media('<desktop'){
+                width: 50%;
+            }
+            @include media('<tabletSm'){
+                margin-bottom: 60px;
+                width: 100%;
+            }
+            
+            .b-contactus__title_sub{
+                margin-bottom: 36px;
+        
+                @include media('<desktop'){
+                    margin-bottom: 20px;
+                }
+            }
+            
+            .b-label_checkbox{
+//                display: block;
+            }
+        }
+        &_email{
+            width: 595px;
+        
+            @include media('<desktop'){
+                width: 50%;
+            }
+            @include media('<tabletSm'){
+                width: 100%;
+            }
+            
+            .b-contactus__title_sub{
+                padding-left: 5px;
+            }
+            
+            .b-wr_input{
+                margin-bottom: 25px;
+                margin-left: 5px;
+            }
+            .b-btn{
+                @include media('<desktop'){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.b-form_contactus{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    @include media('<tabletSm'){
+        flex-direction: column;    
+    }
+    
+    .b-form__popup{
+        position: absolute;
+        left: 0;
+        bottom: calc(100% + 3px);
+        z-index: 1;
+        width: 100%;
+        
+        @include media('<tabletSm'){
+            bottom: 149px;
+        }
+    }
+}

@@ -1,0 +1,148 @@
+.b-input{
+    margin-right: 7px;
+    flex-grow: 1;
+    padding: 1px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    color: $text_grey;
+    border-color: transparent;
+    outline: none;
+    background-color: transparent;
+    
+    &::placeholder{
+        text-transform: uppercase;
+        color: $text_grey;
+    }
+}
+
+.b-wr{
+    &_input, &_textarea{
+        display: flex;
+        align-items: center;
+        border-radius: 26px;
+        padding: 7px 7px 7px 25px;
+        border: 2px solid transparent;
+        background-color: $white;
+    }
+    
+    &_input{
+        height: 52px;
+
+        > svg{
+            fill: $active;
+            flex-shrink: 0;
+        }
+    }
+    &_textarea{
+    }
+}
+
+.b-label{
+    &_checkbox{
+        cursor: pointer;
+        
+        + .b-label_checkbox{
+            margin-top: 20px;
+            
+            @include media('<tabletSm'){
+                margin-top: 17px;
+            }
+        }
+    }
+    &__text{
+        display: flex;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: $white;
+        user-select: none;
+            
+        @include media('<tabletSm'){
+            min-height: 30px;
+            line-height: 1.3;
+        }
+        
+        &_dark{
+            color: $text_grey;
+        }
+    }
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+    visibility: hidden;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(0, 0, 0, 0);
+
+    + .b-label__text{
+        &:before {
+            content: '';
+            flex-shrink: 0;
+            display:inline-block;
+            vertical-align: -16%;
+            width: 18px;
+            height: 18px;
+            border-radius: 2px;
+            margin:0 17px 0 0;
+            background-color: $white;
+            
+            @include media('<tabletSm'){
+                margin-top: -2px;
+            }
+        }
+        &_dark{
+            &:before {
+                border: 2px solid $active;
+            }
+        }
+    }
+
+    &:checked + .b-label__text:before {
+        border: 2px solid $checked;
+        background-color: $checked;
+    }
+
+    &:disabled + .b-label__text:before {
+        background-color: $text_dark;
+    }
+}
+textarea{
+    min-height: 34px;
+    resize: none
+}
+
+form{
+    &.is-touched{
+        input:invalid{
+            color: $popup__text_error;
+        }
+    }
+    &.is-invalid{
+        .js-popup_invalid{
+            opacity: 1;
+            pointer-events: all;
+            transform: translateY(0);
+        }
+    }
+    &.is-error{
+        .js-popup_error{
+            opacity: 1;
+            pointer-events: all;
+            transform: translateY(0);
+        }
+    }
+    &.is-valid{
+        .js-popup_success{
+            opacity: 1;
+            pointer-events: all;
+            transform: translateY(0);
+        }
+    }
+}
+//.b-form__popup{
+//    
+//}

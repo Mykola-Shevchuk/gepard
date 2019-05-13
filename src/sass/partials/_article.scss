@@ -1,0 +1,201 @@
+.b-article{
+    position: relative;
+    padding: 80px 0 55px;
+        
+    @include media('<desktop'){
+        padding-top: 60px;
+    }
+    @include media('<tabletSm'){
+        padding: 40px 0 50px;
+    }
+    
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        @extend %gradient__dark_angled;
+    }
+    &__wr{
+        @extend %wrapper;
+        display: flex;
+        flex-direction: column;
+    }
+    &__wr-syndicator {
+        @include media('<tabletSm'){
+            margin-top: 250px;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+    }
+    &__container{
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        
+        @include media('<desktop'){
+            flex-direction: column;
+            padding: 0 43px;
+        }
+        @include media('<tabletSm'){
+            margin-bottom: 30px;
+            padding: 0;
+        }
+    }
+    &__container-syndicator {
+        @include media('<tabletSm'){
+            margin-bottom: 0;
+            padding: 0;
+        }
+    }
+    &__img{
+        margin-bottom: 40px;
+        max-width: 648px;
+        align-self: flex-start;
+        object-fit: contain;
+        object-position: top;
+        font-family: 'object-fit: contain; object-position: top';
+        
+        @include media('<desktop'){
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+//            max-width: 100%;
+        }
+        
+        @include media('<tabletSm'){
+//            width: 100%;
+            object-position: center;
+            font-family: 'object-fit:contain;object-position: center';
+        }
+        @include media('<tabletSm'){
+            margin-bottom: 20px;
+        }
+    }
+    
+    &__img-large {
+        max-width: 800px;
+        margin-bottom: 0;
+    }
+    
+    &__content{
+        margin-right: 50px;
+        
+        @include media('<desktop'){
+            margin: 0;
+        }
+    }
+    &__content-syndicator {
+        @include media('<tabletSm'){
+            position: absolute;
+            top: -245px;
+            left: 0;
+            padding: 20px 15px;
+        }
+
+        @include media('<phoneLg'){
+            position: absolute;
+            top: -260px;
+            left: 0;
+            padding: 20px 15px;
+        }
+    }
+    &__title{
+        margin-bottom: 40px;
+        font-size: 22px;
+        font-weight: 500;
+        color: $active;
+        
+        @include media('<desktop'){
+            margin-bottom: 15px;
+        }
+        @include media('<tabletSm'){
+            margin-bottom: 9px;
+        }
+    }
+    &__descr{
+        color: $white;
+        font-weight: 500;
+        
+        @include media('<tabletSm'){
+            font-size: 14px;
+        }
+    }
+    
+    &__descr-syndicator {
+        padding-top: 30px;
+        
+        & .primary {
+            color: $white;
+            font-size: 40px;
+            letter-spacing: .102em;
+            font-weight: 600;
+            text-transform: uppercase;
+
+            @include media('<tabletSm'){
+                color: $black;
+                font-size: 25px;
+            }
+            @include media('<phoneLg'){
+                font-size: 20px;
+            }
+        }
+        
+        & .secondary {
+            font-size: 25px;
+
+            @include media('<tabletSm'){
+                font-size: 20px;
+            }
+            @include media('<phoneLg'){
+                font-size: 18px;
+            }
+        }
+    }
+    
+    .b-btn{
+        align-self: center;
+    }
+    
+    &_reverse{
+        @extend .b-article;
+        .b-article{
+            &__container{
+                flex-direction: row;
+                
+                @include media('<desktop'){
+                    flex-direction: column;
+                }
+            }
+            &__content{
+                margin-right: 0;
+                margin-left: 50px;
+                
+                @include media('<desktop'){
+                    margin: 0;
+                }
+            }
+        }
+    }
+    
+    &_active{
+        &:before{
+            @include gradient__active_angled;
+        }
+        &__bg {
+            background:
+                url("../../resources/img/content-syndicator-bg.webp"),
+                url("../../resources/img/content-syndicator-bg.png") no-repeat;
+            background-size: cover;
+        }
+        .b-article{
+            &__title{
+                color: $bg_dark;
+            }
+        }
+    }
+}

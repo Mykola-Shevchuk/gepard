@@ -1,0 +1,94 @@
+// SOME RESETS
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p{
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+    margin: 0;
+    padding: 0;
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+figure{
+    margin: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+// IE reset input field
+::-ms-clear{
+    display: none;
+}
+
+// GLOBAL STYLES
+.g-hidden{
+    display: none;
+}
+.g-color_active{
+    color: $active;
+}
+.g-gradient_active{
+    @extend %gradient__active_angled;
+}
+.g-gradient_dark{
+    @extend %gradient__dark_angled;
+}
+
+// MAIN STYLES
+html, body{
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    height: 100%;
+    font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.8;
+    
+    &.is-menu_open{
+        overflow: hidden;
+    }
+}
+.b-container_page{
+    padding-top: $header__height_desktop;
+//    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+    @include media('<desktop'){
+        padding-top: $header__height_tablet;
+//        height: 100%;
+//        overflow: auto;
+    }
+}
+
+//lazy load:
+img {
+    display: block;
+//    opacity: 1;
+//    transition: opacity $time_trans;
+}
+
+img[data-src], img[data-src-lg] {
+    opacity: 0;
+}
+
+.b-anchor{
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -$header__height_desktop-scrolled;
+    
+    @include media('<desktop'){
+        top: -$header__height_tablet;
+    }
+}

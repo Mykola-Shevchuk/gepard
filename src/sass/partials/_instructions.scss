@@ -1,0 +1,70 @@
+.b-instructions {
+  padding: 40px 25px;
+  
+  &__title {
+    font-size: 30px;
+    font-weight: 500;
+    color: $white;
+    text-align: center;
+  }
+  
+  &__content {
+    padding: 40px 50px 40px 0;
+    display: flex;
+  }
+}
+
+.b-instruction {
+  &__container {
+    min-width: 300px;
+  }
+  
+  &__label {
+    height: 120px;
+    background-image: linear-gradient(80deg, $white, #ffd15c 70%);
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    
+    &::before {
+      content: '';
+      border: 60px solid transparent;
+      border-left: 50px solid #ffd15c;
+      position: absolute;
+      right: -110px;
+      top: 0;
+      width: 0;
+      height: 0;
+    }
+  }
+
+  &__icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    color: #ffd15c;
+
+    svg{
+      fill: currentColor;
+    }
+  }
+  
+  &__title {
+    font-size: 22px;
+    margin-left: 15px;
+    text-transform: uppercase;
+  }
+  
+  &__desc {
+    margin-right: -50px;
+    padding: 20px 30px;
+    color: $white;
+  }
+}

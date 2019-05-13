@@ -1,0 +1,104 @@
+.b-btn{
+    position: relative;
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    min-width: 240px;
+    padding: 5px;
+    border-radius: 31px;
+    box-shadow: 0 0 24px rgba($black, 0);
+    transition: box-shadow $time_trans;
+    outline: none;
+    
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        border-radius: inherit;
+        opacity: 0;
+        transition: opacity $time_trans;
+        background-image: linear-gradient(to right, $white, $white); 
+    }
+    
+    &:hover{
+        @extend %btn_hover;
+    }
+    
+    &__wr_inner{
+        @extend %gradient__active_angled;
+        position: relative;
+        display: block;
+        border-radius: 26px;
+        padding: 4px;
+        cursor: pointer;
+        box-shadow: 0 0 24px rgba($black, .22);
+        transition: box-shadow $time_trans;
+        
+        &:before{
+            @extend %gradient__active_angled;
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+            border-radius: inherit;
+            opacity: 0;
+            transition: opacity $time_trans;
+        }
+    }
+    &__inner{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 219px;
+        height: 44px;
+        border-radius: 22px;
+        padding: 11px 44px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        color: $white;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: transparent;
+        transition: color $time_trans;
+    }
+    
+    &_dark{
+        @extend .b-btn;
+            
+        .b-btn__wr_inner{
+            @extend %gradient__dark_angled;
+        }
+    }
+}
+
+%btn_hover{
+    box-shadow: 0 0 24px rgba($black, .22);
+
+    &:before{
+        opacity: .7;
+        background-image: linear-gradient(to right, $white, $active, $white); 
+    }
+
+    .b-btn{
+        &__wr_inner{
+            background-image: linear-gradient($gradient_angle, $white, $white);
+            box-shadow: 0 0 24px rgba($black, 0);
+            cursor: pointer;
+
+            &:before{
+                opacity: .06;
+            }
+        }
+        &__inner{
+            color: $active;
+        }
+    }
+}

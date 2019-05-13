@@ -1,0 +1,154 @@
+.b-contactusExt{
+    position: relative;
+    padding: 50px 30px;
+        
+    @include media('<desktop'){
+        padding: 50px 0;
+    }
+    
+    &__wr{
+        @extend %wrapper;
+        position: relative;
+    }
+    
+    &__title{
+        margin-bottom: 0;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-indent: .3em;
+        color: $active;
+        
+        @include media('<tabletSm'){
+            line-height: 1.4;
+            font-size: 30px;
+        }
+        
+        &_sub{
+            margin-bottom: 15px;
+            font-size: 22px;
+            color: $black;
+
+            @include media('<desktop'){
+            }        
+            @include media('<tabletSm'){
+                margin-bottom: 7px;
+            }
+        }
+    }
+    &__title_2nd{
+        margin-bottom: 50px;
+        text-align: center;
+        font-family: 'Caveat', cursive;
+        line-height: 1;
+        font-size: 30px;
+        
+        @include media('<tabletSm'){
+            margin-bottom: 45px;
+            font-size: 24px;
+        }
+    }
+    &__block{
+        margin-bottom: 30px;
+        width: 44%;
+        display: flex;
+        flex-direction: column;
+        
+        @include media('<tabletSm'){
+            width: 100%;
+        }
+        
+        &_checkboxes{
+            @include media('<tabletSm'){
+                margin-bottom: 40px;
+            }
+            
+            .b-contactusExt__title_sub{
+                @include media('<tabletSm'){
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        &_email{
+        }
+    }
+}
+
+.b-form_contactusExt{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    @include media('<tabletSm'){
+        flex-direction: column;    
+    }
+    
+    .b-wr{
+        &_input, &_textarea{
+            margin-bottom: 30px;
+            border-color: $active;
+            padding-right: 25px;
+            
+            @include media('<tabletSm'){
+                margin-bottom: 25px;
+            }
+            
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &_textarea{
+            margin-top: auto;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            width: 100%;
+            
+            @include media('<tabletSm'){
+                margin-top: 5px;
+            }
+        }
+    }
+    .b-input{
+        margin-right: 0;
+    }
+    textarea{
+        
+    }
+    .b-label_checkbox{
+        margin-bottom: 30px;
+        align-self: flex-start;
+            
+        @include media('<tabletSm'){
+            margin-bottom: 17px;
+        }
+        
+        + .b-label_checkbox{
+            margin-top: 0px;
+        }
+    }
+    .btn_wr{
+        width: 100%;
+        text-align: center;
+        
+        .b-btn{
+            @include media('<tabletSm'){
+                width: 100%;
+            }
+        }
+    }
+    
+    .b-form__popup{
+        position: absolute;
+        left: 0;
+        bottom: 4px;
+        z-index: 1;
+        width: 100%;
+        
+        @include media('<tabletSm'){
+            bottom: 149px;
+        }
+    }
+}
