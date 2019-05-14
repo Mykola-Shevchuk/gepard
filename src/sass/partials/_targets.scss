@@ -1,159 +1,160 @@
-.webp{
-    .b-targets{
-        background-image: url(../resources/img/targets-bg-left.webp), url(../resources/img/targets-bg-right.webp);
-        
-        @include media('<desktop'){
-            background-image: url(../resources/img/targets-bg-left-top.webp), url(../resources/img/targets-bg-right-top.webp), url(../resources/img/targets-bg-right-bottom.webp), url(../resources/img/targets-bg-left-bottom.webp);
-        }
-    }
+.webp {
+  .b-targets {
+    background-image: url(../resources/img/targets-bg-left.webp), url(../resources/img/targets-bg-right.webp);
 
-    .b-target-transformation {
-      background: url(../resources/img/transformation.webp) no-repeat center center;
-      background-size: cover;
+    @include media('<desktop') {
+      background-image: url(../resources/img/targets-bg-left-top.webp), url(../resources/img/targets-bg-right-top.webp), url(../resources/img/targets-bg-right-bottom.webp), url(../resources/img/targets-bg-left-bottom.webp);
     }
-}
-.no-webp{
-    .b-targets{
-        background-image: url(../resources/img/targets-bg-left.jpg), url(../resources/img/targets-bg-right.jpg);
-        
-        @include media('<desktop'){
-            background-image: url(../resources/img/targets-bg-left-top.jpg), url(../resources/img/targets-bg-right-top.jpg), url(../resources/img/targets-bg-right-bottom.jpg), url(../resources/img/targets-bg-left-bottom.jpg);
-        }
-    }
+  }
 
-    .b-target-transformation {
-      background: url(../resources/img/transformation.jpg) no-repeat center center;
-      background-size: cover;
-    }
+  .b-target-transformation {
+    background: url(../resources/img/transformation.webp) no-repeat center center;
+    background-size: cover;
+  }
 }
 
-.b-target{
-    position: relative;
-    margin: 0 15px;
+.no-webp {
+  .b-targets {
+    background-image: url(../resources/img/targets-bg-left.jpg), url(../resources/img/targets-bg-right.jpg);
+
+    @include media('<desktop') {
+      background-image: url(../resources/img/targets-bg-left-top.jpg), url(../resources/img/targets-bg-right-top.jpg), url(../resources/img/targets-bg-right-bottom.jpg), url(../resources/img/targets-bg-left-bottom.jpg);
+    }
+  }
+
+  .b-target-transformation {
+    background: url(../resources/img/transformation.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.b-target {
+  position: relative;
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  width: calc(#{(100%/3)} - 30px);
+  padding: 61px 60px 55px;
+  background-color: rgba($white, 0.42);
+  box-shadow: 0 0 24px rgba($black, 0.22);
+  transition: background-color $time_trans;
+
+  @include media('<desktop') {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 15px 30px 25px;
+  }
+  //    @include media('<tabletSm'){
+  //    }
+
+  &:hover {
+    background-color: $bg_dark;
+
+    .b-target {
+      &__wr_icon,
+      &__descr,
+      &__title {
+        //                color: $text_grey;
+        color: $white;
+      }
+      &__btn {
+        @extend %btn_hover;
+      }
+    }
+  }
+
+  &__header {
+    margin-bottom: 22px;
     display: flex;
-    flex-direction: column;
-    width: calc(#{(100%/3)} - 30px);
-    padding: 61px 60px 55px;
-    background-color: rgba($white, 0.42);
-    box-shadow: 0 0 24px rgba($black, 0.22);
-    transition: background-color $time_trans;
-        
-    @include media('<desktop'){
-        margin-left: 0;
-        margin-right: 0;
+
+    @include media('<desktop') {
+      align-self: center;
+    }
+  }
+
+  &__wr_icon {
+    width: 60px;
+    height: 41px;
+    color: $active;
+    transition: color $time_trans;
+
+    svg {
+      fill: currentColor;
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    color: $black;
+    transition: color $time_trans;
+  }
+
+  &__descr {
+    margin-bottom: 45px;
+    font-weight: 500;
+    color: $text_grey;
+    transition: color $time_trans;
+
+    @include media('<desktop') {
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+
+  &__btn {
+    margin-top: auto;
+    align-self: center;
+  }
+
+  &s {
+    position: relative;
+    padding: 37px 0 60px;
+    background-position: left, right;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include media('<desktop') {
+      padding-bottom: 50px;
+      background-position: left top, right top, right bottom, left bottom;
+      background-size: auto;
+    }
+    @include media('<tabletSm') {
+      padding: 30px 0;
+      background-size: 24%, 20%, 45%, 32%;
+    }
+
+    &__wr {
+      @extend %wrapper;
+    }
+    &__title {
+      margin: 0 auto 37px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 22px;
+      font-weight: 400;
+
+      @include media('<tabletSm') {
         margin-bottom: 30px;
-        width: 100%;
-        padding: 15px 30px 25px;
+        line-height: normal;
+      }
     }
-//    @include media('<tabletSm'){
-//    }
+    &__container {
+      margin: 0 -15px;
+      display: flex;
+      justify-content: space-around;
 
-    &:hover{
-        background-color: $bg_dark;
-        
-        .b-target{
-            &__wr_icon,
-            &__descr,
-            &__title{
-//                color: $text_grey;
-                color: $white;
-            }
-            &__btn{
-                @extend %btn_hover;
-            }
-        }
+      @include media('<desktop') {
+        margin: 0;
+        flex-direction: column;
+      }
+      @include media('<tabletSm') {
+        margin-left: -17px;
+        margin-right: -17px;
+      }
     }
-
-    &__header{
-        margin-bottom: 22px;
-        display: flex;
-        
-        @include media('<desktop'){
-            align-self: center;
-        }
-    }
-    
-    &__wr_icon{
-        width: 60px;
-        height: 41px;
-        color: $active;
-        transition: color $time_trans;
-        
-        svg{
-            fill: currentColor;
-        }
-    }
-    
-    &__title{
-        font-size: 22px;
-        color: $black;
-        transition: color $time_trans;
-    }
-
-    &__descr{
-        margin-bottom: 45px;
-        font-weight: 500;
-        color: $text_grey;
-        transition: color $time_trans;
-        
-        @include media('<desktop'){
-            text-align: center;
-            font-size: 14px;
-        }
-    }
-
-    &__btn{
-        margin-top: auto;
-        align-self: center;
-    }
-    
-    &s{
-        position: relative;
-        padding: 37px 0 60px;
-        background-position: left, right;
-        background-repeat: no-repeat;
-        background-size: contain;
-        
-        @include media('<desktop'){
-            padding-bottom: 50px;
-            background-position: left top, right top, right bottom, left bottom;
-            background-size: auto;
-        }
-        @include media('<tabletSm'){
-            padding: 30px 0;
-            background-size: 24%, 20%, 45%, 32%;
-        }
-        
-        &__wr{
-            @extend %wrapper;
-        }
-        &__title{
-            margin: 0 auto 37px;
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 22px;
-            font-weight: 400;
-            
-            @include media('<tabletSm'){
-                margin-bottom: 30px;
-                line-height: normal;
-            }
-        }
-        &__container{
-            margin: 0 -15px;
-            display: flex;
-            justify-content: space-around;
-        
-            @include media('<desktop'){
-                margin: 0;
-                flex-direction: column;
-            }
-            @include media('<tabletSm'){
-                margin-left: -17px;
-                margin-right: -17px;
-            }
-        }
-    }
+  }
 }
 
 .b-target-transformation {
@@ -162,21 +163,22 @@
 
   &__title {
     margin-bottom: 0;
+    font-weight: 500;
   }
-  
+
   &__subtitle {
     text-align: center;
     padding: 10px 0 50px 0;
   }
-  
+
   &__icon-rotated {
     transform: rotate(-40deg);
   }
-  
+
   &__bottom-title {
     text-align: center;
     margin-top: 50px;
-    
+
     p {
       padding: 5px;
       font-size: 22px;

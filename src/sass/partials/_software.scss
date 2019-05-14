@@ -1,6 +1,7 @@
 .b-software {
   height: 500px;
-  background: url("../resources/img/content-syndicator-software.webp") no-repeat right top;
+  background: url("../resources/img/content-syndicator-software.webp"),
+  url("../resources/img/content-syndicator-software.jpg") no-repeat right top;
   background-size: cover;
 
   &__item {

@@ -7,3 +7,4 @@ import sliderAbout from "@comp/sliders/about";
 import sliderInstructions from "@comp/sliders/instructions";
 import "@comp/forms/";
 import "@comp/menu";
+import tabsSyndicator from "@comp/tabs/syndicator";

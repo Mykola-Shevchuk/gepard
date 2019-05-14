@@ -1,0 +1,15 @@
+const targetList = document.querySelectorAll('ul.b-tabs-list li span');
+const targetBlock = document.querySelectorAll('.b-tab-content__item');
+
+targetList.forEach(target => {
+  target.addEventListener('click', function () {
+    const tabId = this.getAttribute('data-tab');
+
+    [...targetList, ...targetBlock].forEach(item => {
+      item.classList.remove('current');
+    });
+    
+    target.classList.add('current');
+    document.querySelector('#'+tabId).classList.add('current');
+  });
+});
