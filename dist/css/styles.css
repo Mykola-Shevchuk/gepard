@@ -3290,6 +3290,10 @@ a.b-footer__link {
     width: 0;
     height: 0; }
 
+@-moz-document url-prefix() {
+  .b-instruction__label::before {
+    border-left: 51px solid #ffd15c; } }
+
 .b-instruction__icon {
   width: 90px;
   height: 90px;

@@ -38,6 +38,12 @@
       width: 0;
       height: 0;
     }
+
+    @-moz-document url-prefix() {
+      &::before {
+        border-left: 51px solid #ffd15c;
+      }
+    }
   }
 
   &__icon {
