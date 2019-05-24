@@ -1,5 +1,5 @@
 .b-case-study-main {
-  background: 
+  background:
       url("../resources/img/case-study/shutterstock.jpg") no-repeat left top,
       url("../resources/img/case-study/shutterstock2.jpg") no-repeat right top;
   background-size: contain;
@@ -150,7 +150,7 @@
   }
   
   &__btn {
-    padding: 50px 0 30px 0;
+    padding: 50px 0;
 
     @include media('<laptop'){
       padding-left: 50px;
@@ -158,17 +158,6 @@
 
     @include media('<desktop'){
       padding: 50px 0 30px 50px;
-    }
-
-    @include media('<tabletLg'){
-      height: 500px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: $white
-    url("../resources/img/case-study/article-bg.jpg") no-repeat center right;
-      background-size: cover;
-      margin-top: 30px;
     }
   }
 }
