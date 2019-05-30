@@ -164,11 +164,56 @@
   &__title {
     margin-bottom: 0;
     font-weight: 500;
+
+    @include media('<phoneLg') {
+      margin-bottom: 30px;
+    }
   }
 
   &__subtitle {
     text-align: center;
     padding: 10px 0 50px 0;
+
+    @include media('<phoneLg') {
+      display: none;
+    }
+  }
+  
+  &__header {
+    @include media('<phoneLg') {
+      margin-bottom: 0;
+    }
+  }
+
+  &__target {
+    position: relative;
+    &:hover {
+      color: $white;
+    }
+    
+    @include media('<phoneLg') {
+      cursor: pointer;
+      padding: 15px 50px 15px 15px;
+    }
+  }
+  
+  &__arrow {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    font-size: 45px;
+    transform: rotate(90deg);
+
+    @include media('<phoneLg') {
+      display: block;
+    }
+  }
+  
+  &__descr {
+    @include media('<phoneLg') {
+      display: none;
+    }
   }
 
   &__icon-rotated {

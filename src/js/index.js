@@ -8,3 +8,4 @@ import sliderInstructions from "@comp/sliders/instructions";
 import "@comp/forms/";
 import "@comp/menu";
 import tabsSyndicator from "@comp/tabs/syndicator";
+import collapseSyndicator from "@comp/collapse/syndicator";

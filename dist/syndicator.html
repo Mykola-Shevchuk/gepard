@@ -139,9 +139,8 @@
     </header>
     <div class="b-content">
         <article class="b-article b-article_active b-article_active__bg b-article__wr-syndicator">
-            <span class="b-anchor" id="syndicator"></span>
             <div class="b-article__wr">
-                <div class="b-article__container b-article__container-syndicator">
+                <div class="b-article__container-syndicator">
                     <picture>
                         <source srcset="resources/img/content-syndicator.webp" type="image/webp">
                         <source srcset="resources/img/content-syndicator.png" type="image/jpeg">
@@ -329,11 +328,12 @@ product information</span>
             </div>
         </section>
         <section class="b-case b-case_reverse b-software">
-            <span class="b-anchor" id="software"></span>
-            <div class="b-case__container">
+            <div class="b-case__container b-software__wr">
                 <div class="b-advantages__wr">
-                    <div class="b-advantages__container">
-                        <div class="b-advantages__title">What You Get with Gepard Content Syndication Software</div>
+                    <div class="b-advantages__container b-software__container">
+                        <div class="b-advantages__title b-software__title">What You Get with Gepard Content Syndication
+                            Software
+                        </div>
                         <div class="b-advantages__content">
                             <article class="b-advantage b-software__item">
                                 <div class="b-advantage__wr_icon">
@@ -373,6 +373,14 @@ product information</span>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="b-software__container-tablet">
+            <picture>
+                <source srcset="resources/img/content-syndicator-software-tablet.webp" type="image/webp">
+                <source srcset="resources/img/content-syndicator-software-tablet.jpg" type="image/jpeg">
+                <img src="resources/img/content-syndicator-software-tablet.jpg" alt=""
+                     class="">
+            </picture>
         </section>
         <section class="b-promo b-promo-syndicator">
             <div class="b-promo__wr">
@@ -461,18 +469,18 @@ product information</span>
                     </ul>
                     <div class="b-tab-content">
                         <div id="tab-1" class="b-tab-content__item current">
-                            <div class="b-banners-container"> 
+                            <div class="b-banners-container">
                                 <div class="b-tab-content__item-banners">
-                                    <img class="b-integration" alt="Lazada" src="resources/img/tabs/lazada.png">
+                                    <img class="b-integration" alt="Lazada" src="resources/img/tabs/lazada.svg">
                                 </div>
                                 <div class="b-tab-content__item-banners">
-                                    <img class="b-integration" alt="Lazada" src="resources/img/tabs/walmart.png">
+                                    <img class="b-integration" alt="Walmart" src="resources/img/tabs/walmart.svg">
                                 </div>
                                 <div class="b-tab-content__item-banners">
-                                    <img class="b-integration" alt="Lazada" src="resources/img/tabs/amazon.png">
+                                    <img class="b-integration" alt="Amazon" src="resources/img/tabs/amazon.svg">
                                 </div>
                                 <div class="b-tab-content__item-banners">
-                                    <img class="b-integration" alt="Lazada" src="resources/img/tabs/ebay.png">
+                                    <img class="b-integration" alt="Ebay" src="resources/img/tabs/ebay.svg">
                                 </div>
                             </div>
                         </div>
@@ -492,7 +500,8 @@ product information</span>
                             Tab 6
                         </div>
                     </div>
-                    <div class="b-tabs__subtitle">Gepard platform offers a wide range of content syndication tools in integration with world's top retailers and solution providers.
+                    <div class="b-tabs__subtitle">Gepard platform offers a wide range of content syndication tools in
+                        integration with world's top retailers and solution providers.
                     </div>
                 </div>
             </div>
@@ -504,8 +513,8 @@ product information</span>
                     with its advanced data transformation capabilities, providing you with powerful and flexible product
                     content syndication services</p>
                 <div class="b-targets__container">
-                    <span class="b-target">
-                            <span class="b-target__header">
+                    <span class="b-target b-target-transformation__target">
+                            <span class="b-target__header b-target-transformation__header">
                                 <span class="b-target__wr_icon">
                                     <svg class="b-target__icon" width="45" height="41">
                                         <use xlink:href="#box"></use>
@@ -513,34 +522,33 @@ product information</span>
                                     <!--                                    <img src="resources/img/icons/manufacturers.svg" alt="" class="b-target__icon">-->
                                 </span>
                                 <span class="b-target__title b-software__item-title">One product feature into several features</span>
+                                <span class="b-target-transformation__arrow" data-arrow-id="1">&rsaquo;</span>
                             </span>
-                            <p class="b-target__descr">xample. Marketplace Long description data compilation from different marketing product fields (bullets, reasons to buy, etc) out of the Icecat data.</p>
+                            <p class="b-target__descr b-target-transformation__descr" data-item-id="1">Example. Marketplace Long description data compilation from different marketing product fields (bullets, reasons to buy, etc) out of the Icecat data.</p>
                         </span>
-                    <span class="b-target">
-                            <span class="b-anchor" id="marketplaces"></span>
-                            <span class="b-target__header">
+                    <span class="b-target b-target-transformation__target">
+                            <span class="b-target__header b-target-transformation__header">
                                 <span class="b-target__wr_icon">
-<!--                                    <img src="resources/img/icons/marketplaces.svg" alt="" class="b-target__icon svg_injectable">-->
                                     <svg class="b-target__icon" width="40" height="41">
                                         <use xlink:href="#box_into"></use>
                                     </svg>
                                 </span>
                                 <span class="b-target__title b-software__item-title">Several product features into one feature</span>
+                                <span class="b-target-transformation__arrow" data-arrow-id="2">&rsaquo;</span>
                             </span>
-                            <p class="b-target__descr">Example. Content source: Quantity of USB 2.0 = 1 Quantity of USB 3.0 = 4 Quantity of HDMi = 1. Output: (free text) 1 x USB 2.0, 4 x USB 3.0, 1 x HDMI.</p>
+                            <p class="b-target__descr b-target-transformation__descr" data-item-id="1">Example. Content source: Quantity of USB 2.0 = 1 Quantity of USB 3.0 = 4 Quantity of HDMi = 1. Output: (free text) 1 x USB 2.0, 4 x USB 3.0, 1 x HDMI.</p>
                         </span>
-                    <span class="b-target">
-                            <span class="b-anchor" id="online-stores"></span>
-                            <span class="b-target__header">
+                    <span class="b-target b-target-transformation__target">
+                            <span class="b-target__header b-target-transformation__header">
                                 <span class="b-target__wr_icon b-target-transformation__icon-rotated">
-<!--                                    <img src="resources/img/icons/online-stores.svg" alt="" class="b-target__icon">-->
                                     <svg class="b-target__icon" width="47" height="40">
                                         <use xlink:href="#combination"></use>
                                     </svg>
                                 </span>
                                 <span class="b-target__title b-software__item-title">Conditional mapping & transformation</span>
+                                <span class="b-target-transformation__arrow" data-arrow-id="3">&rsaquo;</span>
                             </span>
-                            <p class="b-target__descr">If a product from Content source has Category. A and attribute B it should go to category AB of a client. Example: Category = Cameras Attribute: Camera Type = Digital > Category Digital Cameras is assigned</p>
+                            <p class="b-target__descr b-target-transformation__descr" data-item-id="1">If a product from Content source has Category. A and attribute B it should go to category AB of a client. Example: Category = Cameras Attribute: Camera Type = Digital > Category Digital Cameras is assigned</p>
                         </span>
                 </div>
                 <div class="b-target-transformation__bottom-title">
