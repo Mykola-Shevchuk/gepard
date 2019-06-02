@@ -208,11 +208,21 @@
     @include media('<phoneLg') {
       display: block;
     }
+    
+    &-active {
+      transform: rotate(-90deg);
+      right: 30px;
+    }
   }
   
   &__descr {
     @include media('<phoneLg') {
       display: none;
+      padding-top: 20px;
+    }
+    
+    &-active {
+      display: block;
     }
   }
 

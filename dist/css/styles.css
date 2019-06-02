@@ -1572,9 +1572,16 @@ form.is-valid .js-popup_success {
     @media (max-width: 479px) {
       .b-target-transformation__arrow {
         display: block; } }
+    .b-target-transformation__arrow-active {
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+      right: 30px; }
   @media (max-width: 479px) {
     .b-target-transformation__descr {
-      display: none; } }
+      display: none;
+      padding-top: 20px; } }
+  .b-target-transformation__descr-active {
+    display: block; }
   .b-target-transformation__icon-rotated {
     -webkit-transform: rotate(-40deg);
             transform: rotate(-40deg); }
