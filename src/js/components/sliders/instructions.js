@@ -1,15 +1,32 @@
-import { tns } from "tiny-slider/src/tiny-slider";
+import {tns} from "tiny-slider/src/tiny-slider";
 
 const sliderNode = document.querySelector('.js-slider_instructions');
 
 const slider = sliderNode ? tns({
   container: sliderNode,
-  items: 4,
-  slideBy: 'page',
-  animateIn: 'tns-fadeIn',
+
+  edgePadding: 0,
+  animateIn:'tns-fadeIn',
+  animateOut: 'tns-fadeOut',
   controls: false,
+  nav: false,
   mouseDrag: true,
-  swipeAngle: 25
+  
+  responsive: {
+    1300: {
+      items: 4,
+      disable: true,
+    },
+    700: {
+      items: 4,
+      disable: false
+    },
+    480: {
+      items: 2,
+      center: true
+      
+    },
+  }
 //    preventScrollOnTouch: 'force',
 //    autoplay: true,
 //    autoplayButtonOutput: false,

@@ -17,6 +17,15 @@
 .b-instruction {
   &__container {
     min-width: 300px;
+    max-width: 400px;
+
+    @include media('<phoneLg') {
+      max-width: 350px;
+    }
+
+    @include media('<phoneLg') {
+      max-width: 300px;
+    }
   }
   
   &__label {

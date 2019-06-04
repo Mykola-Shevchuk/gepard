@@ -3327,7 +3327,14 @@ a.b-footer__link {
     display: flex; }
 
 .b-instruction__container {
-  min-width: 300px; }
+  min-width: 300px;
+  max-width: 400px; }
+  @media (max-width: 479px) {
+    .b-instruction__container {
+      max-width: 350px; } }
+  @media (max-width: 479px) {
+    .b-instruction__container {
+      max-width: 300px; } }
 
 .b-instruction__label {
   height: 120px;
