@@ -20,10 +20,15 @@
 
 .b-tabs-list {
   height: 78px;
+  min-width: 800px;
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  &.tns-horizontal.tns-subpixel > .tns-item {
+    display: inherit;
+  }
 
   & li {
     display: flex;
@@ -35,6 +40,11 @@
     transition: color 0.3s, opacity 0.3s;
     cursor: pointer;
     flex-grow: 1;
+    padding-right: 50px;
+    
+    &:last-child {
+      padding-right: 0;
+    }
   }
 
   & span {
@@ -50,6 +60,10 @@
   & span.current {
     color: $active;
     
+    @include media('<tabletSm') {
+      
+    }
+    
     &::after {
       content: '';
       position: absolute;
@@ -60,6 +74,8 @@
       background-color: $active;
       transition: opacity 0.3s;
     }
+
+    
   }
 }
 
@@ -82,7 +98,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0 10px;
+      margin: 0 10px 30px 0;
       
       & img {
         width: 195px;
@@ -93,4 +109,7 @@
 
 .b-banners-container {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
