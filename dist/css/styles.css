@@ -326,6 +326,13 @@ template {
     display: none !important; }
   .tns-outer [aria-controls], .tns-outer [data-action] {
     cursor: pointer; }
+  .tns-outer.ms-touch {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    -ms-scroll-chaining: none;
+    -ms-scroll-snap-type: mandatory;
+    -ms-scroll-snap-points-x: snapInterval(0%, 100%); }
 
 .tns-slider {
   transition: all 0s; }
@@ -345,9 +352,7 @@ template {
   clear: both; }
 
 .tns-horizontal.tns-no-subpixel > .tns-item {
-  float: left; }
-
-.tns-horizontal.tns-carousel.tns-no-subpixel > .tns-item {
+  float: left;
   margin-right: -100%; }
 
 .tns-no-calc {
@@ -356,27 +361,18 @@ template {
 
 .tns-gallery {
   position: relative;
-  left: 0;
-  min-height: 1px; }
+  left: 0; }
   .tns-gallery > .tns-item {
     position: absolute;
     left: -100%;
     transition: opacity 0s, -webkit-transform 0s;
     transition: transform 0s, opacity 0s;
     transition: transform 0s, opacity 0s, -webkit-transform 0s; }
-  .tns-gallery > .tns-slide-active {
-    position: relative;
-    left: auto !important; }
-  .tns-gallery > .tns-moving {
-    transition: all 0.25s; }
-
-.tns-autowidth {
-  display: inline-block; }
 
 .tns-lazy-img {
   transition: opacity 0.6s;
   opacity: 0.6; }
-  .tns-lazy-img.tns-complete {
+  .tns-lazy-img.loaded {
     opacity: 1; }
 
 .tns-ah {
@@ -384,6 +380,12 @@ template {
 
 .tns-ovh {
   overflow: hidden; }
+
+.tns-hdx {
+  overflow-x: hidden; }
+
+.tns-hdy {
+  overflow-y: hidden; }
 
 .tns-visually-hidden {
   position: absolute;
@@ -402,33 +404,6 @@ template {
   opacity: 0;
   filter: alpha(opacity=0);
   z-index: -1; }
-
-.tns-vpfix {
-  white-space: nowrap; }
-  .tns-vpfix > div, .tns-vpfix > li {
-    display: inline-block; }
-
-.tns-t-subp2 {
-  margin: 0 auto;
-  width: 310px;
-  position: relative;
-  height: 10px;
-  overflow: hidden; }
-
-.tns-t-ct {
-  width: 2333.33333%;
-  width: calc(100% * 70 / 3);
-  position: absolute;
-  right: 0; }
-  .tns-t-ct:after {
-    content: '';
-    display: table;
-    clear: both; }
-  .tns-t-ct > div {
-    width: 1.42857%;
-    width: calc(100% / 70);
-    height: 10px;
-    float: left; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -3324,17 +3299,16 @@ a.b-footer__link {
   .b-instructions__content {
     padding: 40px 50px 40px 0;
     display: -webkit-flex;
-    display: flex; }
+    display: flex;
+    -webkit-justify-content: center;
+            justify-content: center; }
 
 .b-instruction__container {
   min-width: 300px;
-  max-width: 400px; }
-  @media (max-width: 479px) {
+  max-width: 500px; }
+  @media (max-width: 1023px) {
     .b-instruction__container {
-      max-width: 350px; } }
-  @media (max-width: 479px) {
-    .b-instruction__container {
-      max-width: 300px; } }
+      max-width: 100%; } }
 
 .b-instruction__label {
   height: 120px;
@@ -3385,6 +3359,9 @@ a.b-footer__link {
 .b-instruction__desc {
   padding: 20px 0 20px 40px;
   color: #FFFFFF; }
+  @media (max-width: 1023px) {
+    .b-instruction__desc {
+      padding-left: 50px; } }
 
 .b-case-study-main {
   background: url("../resources/img/case-study/shutterstock.jpg") no-repeat left top, url("../resources/img/case-study/shutterstock2.jpg") no-repeat right top;

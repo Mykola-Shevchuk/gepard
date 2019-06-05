@@ -5,31 +5,34 @@ const sliderNode = document.querySelector('.js-slider_instructions');
 const slider = sliderNode ? tns({
   container: sliderNode,
 
-  edgePadding: 0,
-  animateIn:'tns-fadeIn',
-  animateOut: 'tns-fadeOut',
+  loop: false,
+  nav: true,
+  center: true,
+
   controls: false,
-  nav: false,
+
+  slideBy: 'page',
   mouseDrag: true,
-  
+
   responsive: {
-    1300: {
-      items: 4,
-      disable: true,
+    450: {
+      items: 1,
+
+      edgePadding: 10
     },
     700: {
-      items: 4,
-      disable: false
+      items:2
     },
-    480: {
-      items: 2,
-      center: true
-      
+
+    1150: {
+      items: 3,
+    },
+    1400: {
+      items: 4,
+      disable: true
+
     },
   }
-//    preventScrollOnTouch: 'force',
-//    autoplay: true,
-//    autoplayButtonOutput: false,
 }) : null;
 
 export default slider;
