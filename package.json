@@ -61,6 +61,6 @@
     "normalize.css": "^8.0.1",
     "object-fit-images": "^3.2.3",
     "supports-webp": "^1.0.7",
-    "tiny-slider": "^2.3.11"
+    "tiny-slider": "^2.8.0"
   }
 }

@@ -131,6 +131,18 @@
   &__desc {
     margin: 0;
     
+    @include media('<hd') {
+      margin-right: -80px;
+    }
+
+    @include media('<laptop') {
+      margin-right: -40px;
+    }
+
+    @include media('<desktop') {
+      margin-right: 0;
+    }
+    
     & svg {
       fill: $active;
     }

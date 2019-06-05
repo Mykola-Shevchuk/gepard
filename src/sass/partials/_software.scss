@@ -10,7 +10,7 @@
   }
 
   @include media('<tabletLg') {
-    height: 100%;
+    height: auto;
     background: $white no-repeat center center;
   }
   
@@ -25,6 +25,11 @@
     @include media('<tabletLg') {
       padding-left: 50px;
       padding-right: 50px;
+    }
+
+    @include media('<phoneLg') {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
   
@@ -62,11 +67,14 @@
     @include media('<tabletLg') {
       padding-left: 30px;
     }
+
+    @include media('<phoneLg') {
+      padding-left: 0;
+    }
   }
   
   &__item-title {
     line-height: initial;
-    font-size: 20px;
     padding-left: 10px;
     vertical-align: top;
   }
