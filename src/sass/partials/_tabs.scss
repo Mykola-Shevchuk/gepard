@@ -40,10 +40,10 @@
     transition: color 0.3s, opacity 0.3s;
     cursor: pointer;
     flex-grow: 1;
-    padding-right: 50px;
-    
-    &:last-child {
-      padding-right: 0;
+
+    @include media('<desktop') {
+      text-align: center;
+      margin-right: 20px;
     }
   }
 
@@ -55,14 +55,14 @@
       cursor: pointer;
       color: $active;
     }
+
+    @include media('<desktop') {
+      width: 100%;
+    }
   }
 
   & span.current {
     color: $active;
-    
-    @include media('<tabletSm') {
-      
-    }
     
     &::after {
       content: '';
@@ -109,7 +109,7 @@
 
 .b-banners-container {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 

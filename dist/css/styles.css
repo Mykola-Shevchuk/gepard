@@ -3572,16 +3572,20 @@ a.b-footer__link {
     transition: color 0.3s, opacity 0.3s;
     cursor: pointer;
     -webkit-flex-grow: 1;
-            flex-grow: 1;
-    padding-right: 50px; }
-    .b-tabs-list li:last-child {
-      padding-right: 0; }
+            flex-grow: 1; }
+    @media (max-width: 1279px) {
+      .b-tabs-list li {
+        text-align: center;
+        margin-right: 20px; } }
   .b-tabs-list span {
     transition: color 0.3s, opacity 0.3s;
     position: relative; }
     .b-tabs-list span:hover {
       cursor: pointer;
       color: #00b39e; }
+    @media (max-width: 1279px) {
+      .b-tabs-list span {
+        width: 100%; } }
   .b-tabs-list span.current {
     color: #00b39e; }
     .b-tabs-list span.current::after {
@@ -3621,9 +3625,9 @@ a.b-footer__link {
 .b-banners-container {
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
-          justify-content: center;
   -webkit-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+          justify-content: center; }
 
 /*# sourceMappingURL=styles.css.map */
