@@ -1478,6 +1478,8 @@ form.is-valid .js-popup_success {
     transition: color 0.3s; }
     .b-target__wr_icon svg {
       fill: currentColor; }
+    .b-target__wr_icon-syndicator {
+      padding-top: 5px; }
   .b-target__title {
     font-size: 22px;
     color: #000000;
@@ -1585,7 +1587,8 @@ form.is-valid .js-popup_success {
     display: block; }
   .b-target-transformation__icon-rotated {
     -webkit-transform: rotate(-40deg);
-            transform: rotate(-40deg); }
+            transform: rotate(-40deg);
+    margin-top: -2px; }
   .b-target-transformation__bottom-title {
     text-align: center;
     margin-top: 50px; }
@@ -1702,6 +1705,9 @@ form.is-valid .js-popup_success {
         width: 50px; } }
     .b-advantage__wr_icon svg {
       fill: currentColor; }
+    @media (max-width: 1023px) {
+      .b-advantage__wr_icon-syndicator {
+        padding-top: 0; } }
   .b-advantage__title {
     text-transform: uppercase;
     line-height: 1.9;
@@ -2221,6 +2227,10 @@ form.is-valid .js-popup_success {
   .b-case-syndicator__desc p {
     font-weight: 500;
     color: #8a8a8a; }
+
+@media only screen and (min-width: 1920px) {
+  .b-case-syndicator__desc {
+    margin-right: -80px; } }
 
 .webp .b-contactus {
   background-image: url(../resources/img/contactus-bg.webp); }
@@ -3621,9 +3631,6 @@ a.b-footer__link {
     .b-tabs-list span:hover {
       cursor: pointer;
       color: #00b39e; }
-    @media (max-width: 1279px) {
-      .b-tabs-list span {
-        width: 100%; } }
   .b-tabs-list span.current {
     color: #00b39e; }
     .b-tabs-list span.current::after {

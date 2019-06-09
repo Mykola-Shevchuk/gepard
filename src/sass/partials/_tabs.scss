@@ -55,10 +55,6 @@
       cursor: pointer;
       color: $active;
     }
-
-    @include media('<desktop') {
-      width: 100%;
-    }
   }
 
   & span.current {

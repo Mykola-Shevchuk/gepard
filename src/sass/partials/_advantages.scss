@@ -35,7 +35,14 @@
         svg{
             fill: currentColor;
         }
+        
+        &-syndicator {
+            @include media('<tabletLg'){
+                padding-top: 0;
+            }
+        }
     }
+    
     &__content{
         
     }
