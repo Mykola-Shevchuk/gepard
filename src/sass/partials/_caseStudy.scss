@@ -18,6 +18,14 @@
   &__container {
     width: 50%;
     padding: 100px 0 100px 50px;
+    
+    &:first-child {
+      width: 45%;
+
+      @include media('<tabletLg'){
+        width: 100%;
+      }
+    }
 
     @include media('<tabletLg'){
       padding: 60px 30px;
@@ -44,7 +52,11 @@
     letter-spacing: .102em;
     line-height: 1.5;
     font-weight: 600;
-    text-transform: uppercase
+    text-transform: uppercase;
+
+    @include media('<tabletSm'){
+      font-size: 24px;
+    }
   }
   
   &__desc-title {
@@ -140,10 +152,11 @@
 }
 
 .b-case-study-article {
-  padding: 20px 0 100px 0;
+  padding: 20px 0 100px 22px;
   @extend %wrapper;
   @include media('<tabletLg'){
     padding-bottom: 0;
+    padding-left: 0;
   }
   
   &__container {
