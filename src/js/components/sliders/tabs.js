@@ -15,17 +15,19 @@ const slider = sliderNode ? tns({
   mouseDrag: true,
 
   responsive: {
-    350: {
+    250: {
       items: 2,
     },
+    350: {
+      items: 4,
+    },
     450: {
-      items: 3,
+      items: 4,
     },
     550: {
-      items: 4,
+      items: 6,
 
     },
-
     850: {
       items: 6,
       disable: true
