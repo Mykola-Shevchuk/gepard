@@ -1,0 +1,145 @@
+.b-blog {
+    position: relative;
+
+    &__title {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        width: 100%;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 38px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 2px;
+    }
+}
+
+.b-blog-article-header {
+    display: flex;
+    justify-content: space-between;
+
+    &__form {
+        width: 480px;
+        height: 360px;
+        background-color: $active;
+        margin-top: -90px;
+        z-index: 2;
+    }
+
+    &__author {
+        display: flex;
+        margin-top: 50px;
+    }
+}
+
+.b-blog-form {
+    width: 390px;
+    margin: 50px;
+
+    &__title {
+        margin-bottom: 20px;
+        line-height: 1.2;
+        font-size: 22px;
+        font-weight: 500;
+        color: $white;
+        text-transform: uppercase;
+    }
+
+    & .b-wr_input {
+        margin-bottom: 20px;
+    }
+}
+
+.b-blog-article-author {
+    &__avatar {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid rgba(0, 179, 158, .1);
+        background-image: url("../../resources/img/blog/avatar.jpg");
+        background-clip: content-box;
+    }
+
+    &__info {
+        margin: 50px 0 0 30px;
+
+        &-name {
+            font-family: 'Caveat', cursive;
+            line-height: 1.1;
+            font-size: 30px;
+        }
+
+        &-position {
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.b-blog-article-content {
+    display: flex;
+    margin-top: 50px;
+
+    &__socials {
+        width: 40%;
+
+        & ul {
+            display: flex;
+            flex-direction: column;
+
+            li {
+              margin-left: 0;
+                margin-bottom: 15px;
+            }
+        }
+
+        &-link {
+            svg {
+                fill: $black;
+            }
+
+            &:hover {
+                svg {
+                    fill: $black;
+                }
+            }
+        }
+    }
+
+    &__date {
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $grey_about;
+
+        &::before {
+            content: '';
+            background-image: url("../../resources/img/blog/calendar.svg");
+            background-repeat: repeat;
+            display: inline-block;
+            background-size: 16px 16px;
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &__text {
+        & p {
+            padding: 15px 0;
+
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+
+        & h3 {
+            font-size: 22px;
+            color: $active;
+            font-weight: 500;
+            padding: 15px 0;
+        }
+    }
+}

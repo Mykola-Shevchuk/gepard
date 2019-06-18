@@ -9,7 +9,7 @@
     box-shadow: 0 0 24px rgba($black, 0);
     transition: box-shadow $time_trans;
     outline: none;
-    
+
     &:before{
         content: '';
         position: absolute;
@@ -21,13 +21,13 @@
         border-radius: inherit;
         opacity: 0;
         transition: opacity $time_trans;
-        background-image: linear-gradient(to right, $white, $white); 
+        background-image: linear-gradient(to right, $white, $white);
     }
-    
+
     &:hover{
         @extend %btn_hover;
     }
-    
+
     &__wr_inner{
         @extend %gradient__active_angled;
         position: relative;
@@ -37,7 +37,7 @@
         cursor: pointer;
         box-shadow: 0 0 24px rgba($black, .22);
         transition: box-shadow $time_trans;
-        
+
         &:before{
             @extend %gradient__active_angled;
             content: '';
@@ -69,10 +69,10 @@
         background-color: transparent;
         transition: color $time_trans;
     }
-    
+
     &_dark{
         @extend .b-btn;
-            
+
         .b-btn__wr_inner{
             @extend %gradient__dark_angled;
         }
@@ -84,7 +84,7 @@
 
     &:before{
         opacity: .7;
-        background-image: linear-gradient(to right, $white, $active, $white); 
+        background-image: linear-gradient(to right, $white, $active, $white);
     }
 
     .b-btn{
