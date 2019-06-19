@@ -30,6 +30,7 @@
 
     &__author {
         display: flex;
+        flex-wrap: wrap;
         margin-top: 50px;
     }
 }
@@ -117,12 +118,14 @@
 
         &::before {
             content: '';
-            background-image: url("../../resources/img/blog/calendar.svg");
+            background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAArlBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeyFOlAAAAOXRSTlMANXgVaIB2Z2ZUR31XOzJAeXt+enwrFkhMAXQkIgMnFAIfGVFVCAdYUxgtG0lNchMeNl0dHCosWS5cwEesAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAKtJREFUGNNNjFkOgkAQBR+M7cYijhs4bKKi4oYK6P1PZkMwUh+VTiX9AGg6WnSNJXpE/RainoA+GNKohYYDHQSMfy98EAzTsicttmUacGjqyJmcz1nOlBzQAh0WBFquXG/tuY1WSw7KV4EWqEa+4hBGIt7EolEUcki2u73c71jp4XjikP0n47gePV+u6S29shIg43A/53ggrwXkHJ6vohRlwQqr6k3IJHWQny8yghA1GXXIgQAAAABJRU5ErkJggg==");
             background-repeat: repeat;
             display: inline-block;
             background-size: 16px 16px;
             width: 16px;
             height: 16px;
+            vertical-align: text-bottom;
+            margin-right: 8px;
         }
     }
 
@@ -146,8 +149,6 @@
 
 .blog-article-table {
     width: 100%;
-
-
 
     & td {
         padding: 50px 40px;
@@ -173,8 +174,13 @@
     padding: 0 100px;
     width: 100%;
 
+    &__title {
+        padding-bottom: 50px;
+    }
+
     &__item {
         width: 31%;
+        min-width: 300px;
         font-weight: 500;
     }
 
@@ -188,9 +194,14 @@
         background-color: $bg_light;
         padding: 30px 50px 50px 50px;
 
+        & a {
+            color: $black;
+        }
+
         &-read-time {
             padding-top: 30px;
             text-transform: uppercase;
         }
     }
 }
+

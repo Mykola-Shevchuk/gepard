@@ -3705,6 +3705,8 @@ a.b-footer__link {
   .b-blog-article-header__author {
     display: -webkit-flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
     margin-top: 50px; }
 
 .b-blog-form {
@@ -3764,12 +3766,14 @@ a.b-footer__link {
     color: #8a8a8a; }
     .b-blog-article-content__date::before {
       content: '';
-      background-image: url("../../resources/img/blog/calendar.svg");
+      background-image: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAArlBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeyFOlAAAAOXRSTlMANXgVaIB2Z2ZUR31XOzJAeXt+enwrFkhMAXQkIgMnFAIfGVFVCAdYUxgtG0lNchMeNl0dHCosWS5cwEesAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAKtJREFUGNNNjFkOgkAQBR+M7cYijhs4bKKi4oYK6P1PZkMwUh+VTiX9AGg6WnSNJXpE/RainoA+GNKohYYDHQSMfy98EAzTsicttmUacGjqyJmcz1nOlBzQAh0WBFquXG/tuY1WSw7KV4EWqEa+4hBGIt7EolEUcki2u73c71jp4XjikP0n47gePV+u6S29shIg43A/53ggrwXkHJ6vohRlwQqr6k3IJHWQny8yghA1GXXIgQAAAABJRU5ErkJggg==");
       background-repeat: repeat;
       display: inline-block;
       background-size: 16px 16px;
       width: 16px;
-      height: 16px; }
+      height: 16px;
+      vertical-align: text-bottom;
+      margin-right: 8px; }
   .b-blog-article-content__text p {
     padding: 15px 0; }
     .b-blog-article-content__text p:first-child {
@@ -3799,8 +3803,11 @@ a.b-footer__link {
           justify-content: space-between;
   padding: 0 100px;
   width: 100%; }
+  .b-blog-post__title {
+    padding-bottom: 50px; }
   .b-blog-post__item {
     width: 31%;
+    min-width: 300px;
     font-weight: 500; }
   .b-blog-post__item-image {
     height: 110px;
@@ -3809,6 +3816,8 @@ a.b-footer__link {
   .b-blog-post__item-text {
     background-color: #ededed;
     padding: 30px 50px 50px 50px; }
+    .b-blog-post__item-text a {
+      color: #000000; }
     .b-blog-post__item-text-read-time {
       padding-top: 30px;
       text-transform: uppercase; }
