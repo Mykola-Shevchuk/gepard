@@ -143,3 +143,54 @@
         }
     }
 }
+
+.blog-article-table {
+    width: 100%;
+
+
+
+    & td {
+        padding: 50px 40px;
+    }
+
+    &__row-title {
+        width: 20%;
+        font-weight: bold;
+
+        & div {
+            width: 90px;
+        }
+    }
+
+    &__row-content {
+        width: 40%;
+    }
+}
+
+.b-blog-post {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    width: 100%;
+
+    &__item {
+        width: 31%;
+        font-weight: 500;
+    }
+
+    &__item-image {
+        height: 110px;
+        background: $active url(../resources/img/blog-logo.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    &__item-text {
+        background-color: $bg_light;
+        padding: 30px 50px 50px 50px;
+
+        &-read-time {
+            padding-top: 30px;
+            text-transform: uppercase;
+        }
+    }
+}
