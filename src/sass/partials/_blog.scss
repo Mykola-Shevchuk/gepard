@@ -1,6 +1,13 @@
 .b-blog {
     position: relative;
 
+    &__main-pic {
+        img {
+            object-fit: contain;
+            min-height: auto;
+        }
+    }
+
     &__title {
         position: absolute;
         top: 50%;
@@ -13,6 +20,22 @@
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 2px;
+
+        @include media('<tabletLg') {
+            font-size: 30px;
+        }
+
+        @include media('<tabletSm') {
+            position: static;
+            color: $black;
+            transform: none;
+            padding: 50px 0 80px 0;
+            font-size: 25px;
+        }
+    }
+
+    &__content {
+        @extend %wrapper;
     }
 }
 
@@ -26,12 +49,20 @@
         background-color: $active;
         margin-top: -90px;
         z-index: 2;
+
+        @include media('<tabletLg'){
+            display: none;
+        }
     }
 
     &__author {
         display: flex;
         flex-wrap: wrap;
         margin-top: 50px;
+
+        @include media('<tabletSm') {
+            flex-wrap: nowrap;
+        }
     }
 }
 
@@ -59,17 +90,53 @@
         height: 150px;
         border-radius: 50%;
         border: 3px solid rgba(0, 179, 158, .1);
-        background-image: url("../../resources/img/blog/avatar.jpg");
+        background-image: url("../resources/img/blog/avatar.jpg");
         background-clip: content-box;
+        background-position: center center;
+        background-size: contain;
+
+        @include media('<tabletLg') {
+            margin-left: 25px;
+        }
+
+        @include media('<tabletSm') {
+            min-width: 100px;
+            min-height: 100px;
+            height: 100px;
+            width: 100px;
+        }
+
+        @include media('<phoneLg') {
+            min-width: 75px;
+            min-height: 75px;
+            height: 75px;
+            width: 75px;
+        }
     }
 
     &__info {
         margin: 50px 0 0 30px;
 
+
+        @include media('<tabletSm') {
+            margin: 0 0 0 20px;
+            display: flex;
+            align-items: center;
+        }
+
         &-name {
             font-family: 'Caveat', cursive;
             line-height: 1.1;
             font-size: 30px;
+
+            @include media('<tabletSm') {
+                font-size: 25px;
+                padding-bottom: 5px;
+            }
+
+            @include media('<phoneLg') {
+                font-size: 22px;
+            }
         }
 
         &-position {
@@ -83,16 +150,21 @@
 .b-blog-article-content {
     display: flex;
     margin-top: 50px;
+    padding: 0 20px 40px 20px;
 
     &__socials {
         width: 40%;
+
+        @include media('<tabletSm') {
+            display: none;
+        }
 
         & ul {
             display: flex;
             flex-direction: column;
 
             li {
-              margin-left: 0;
+                margin-left: 0;
                 margin-bottom: 15px;
             }
         }
@@ -145,26 +217,12 @@
             padding: 15px 0;
         }
     }
-}
 
-.blog-article-table {
-    width: 100%;
-
-    & td {
-        padding: 50px 40px;
-    }
-
-    &__row-title {
-        width: 20%;
-        font-weight: bold;
-
-        & div {
-            width: 90px;
+    &__article-img {
+        img {
+            object-fit: contain;
+            padding: 20px 0;
         }
-    }
-
-    &__row-content {
-        width: 40%;
     }
 }
 
@@ -174,6 +232,14 @@
     padding: 0 100px;
     width: 100%;
 
+    @include media('<desktop') {
+        padding: 0;
+    }
+
+    @include media('<tabletLg') {
+        flex-direction: column;
+    }
+
     &__title {
         padding-bottom: 50px;
     }
@@ -182,12 +248,37 @@
         width: 31%;
         min-width: 300px;
         font-weight: 500;
+
+        @include media('<tabletLg') {
+            width: 100%;
+
+            &:not(:last-child) {
+                padding-bottom: 50px;
+            }
+        }
     }
 
     &__item-image {
-        height: 110px;
-        background: $active url(../resources/img/blog-logo.jpg) no-repeat center center;
-        background-size: cover;
+        img {
+            object-fit: cover;
+            min-height: 150px;
+            height: 150px;
+
+            @include media('<desktop') {
+                min-height: 110px;
+                height: 110px;
+            }
+
+            @include media('<tabletLg') {
+                min-height: 150px;
+                height: 150px;
+            }
+
+            @include media('<phoneLg') {
+                min-height: 110px;
+                height: 110px;
+            }
+        }
     }
 
     &__item-text {
@@ -196,6 +287,11 @@
 
         & a {
             color: $black;
+            transition: color $time_trans;
+
+            &:hover {
+                color: $active;
+            }
         }
 
         &-read-time {
