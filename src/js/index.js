@@ -2,6 +2,7 @@ import "@babel/polyfill";
 import "./partials/helpers";
 import "@comp/clients";
 import "@comp/team";
+import "@comp/posts";
 
 import tabsSyndicator from "@comp/tabs/syndicator";
 import sliderResponces from "@comp/sliders/responces";

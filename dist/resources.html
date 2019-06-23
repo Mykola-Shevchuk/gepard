@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <meta property="og:url" content="https://gepard.io/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Content Syndication Platform | Gepard"/>
+    <meta property="og:description"
+          content="Gepard content syndication platform empowers manufacturers and retailers to deliver the product information consumers demand."/>
+    <meta property="og:image" content="http://gepard.io/img/blog/Gepard_Content_Syndication_Platform_Home.png"/>
+
+    <link rel="icon" href="resources/img/favicon/favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="resources/img/favicon/favicon@2x.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="resources/img/favicon/favicon@6x.png" type="image/png" sizes="96x96"/>
+    <link rel="icon" href="resources/img/favicon/favicon@12x.png" type="image/png" sizes="192x192"/>
+
+    <!--
+        <script type="module" src="js/index.mjs" defer></script>
+        <script nomodule src="js/index.js" defer></script>
+    -->
+    <script src="js/index.js" defer></script>
+
+    <!-- Code snippet to speed up Google Fonts rendering: googlefonts.3perf.com -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="preload"
+          href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,500,600,700&amp;subset=cyrillic"
+          as="fetch" crossorigin="anonymous">
+    <script type="text/javascript">
+      !function (e, n, t) {
+        "use strict";
+        var o = "https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,500,600,700&amp;subset=cyrillic",
+          r = "__3perf_googleFontsStylesheet";
+
+        function c(e) {
+          (n.head || n.body).appendChild(e)
+        }
+
+        function a() {
+          var e = n.createElement("link");
+          e.href = o, e.rel = "stylesheet", c(e)
+        }
+
+        function f(e) {
+          if (!n.getElementById(r)) {
+            var t = n.createElement("style");
+            t.id = r, c(t)
+          }
+          n.getElementById(r).innerHTML = e
+        }
+
+        e.FontFace && e.FontFace.prototype.hasOwnProperty("display") ? (t[r] && f(t[r]), fetch(o).then(function (e) {
+          return e.text()
+        }).then(function (e) {
+          return e.replace(/@font-face {/g, "@font-face{font-display:swap;")
+        }).then(function (e) {
+          return t[r] = e
+        }).then(f).catch(a)) : a()
+      }(window, document, localStorage);
+    </script>
+    <!-- End of code snippet for Google Fonts -->
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<img src="resources/sprite.svg" class="svg_injectable" style="display: none" alt="">
+
+<div class="b-container_page">
+    <header class="b-header js-header">
+        <div class="b-header__wr">
+            <div class="b-header__logo">
+                <a href="#" class="b-link_logo">
+                    <svg width="150" height="60">
+                        <use xlink:href="#gepard-logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <nav class="b-header__nav js-header__nav">
+                <ul class="b-nav__menu">
+                    <li>
+                        <span class="b-nav__link">Products</span>
+                        <ul class="b-nav__submenu">
+                            <li class="b-submenu__back">
+                                <span class="b-nav__link_sub js-submenu__link_back">Back</span>
+                            </li>
+                            <li>
+                                <a href="#pim" class="b-nav__link_sub js-link_anchor">pim</a>
+                            </li>
+                            <li>
+                                <a href="#syndicator" class="b-nav__link_sub js-link_anchor">syndicator</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="b-nav__link">Retailers</span>
+                        <ul class="b-nav__submenu">
+                            <li>
+                                <a href="#online-stores" class="b-nav__link_sub js-link_anchor">Online Stores</a>
+                            </li>
+                            <li>
+                                <a href="#marketplaces" class="b-nav__link_sub js-link_anchor">Marketplaces</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="b-nav__link">Manufacturers</a>
+                    </li>
+                    <li>
+                        <a href="#" class="b-nav__link">Company</a>
+                    </li>
+                    <li>
+                        <span class="b-nav__link">Resources</span>
+                        <ul class="b-nav__submenu">
+                            <li>
+                                <a href="#case" class="b-nav__link_sub js-link_anchor">Case Studies</a>
+                            </li>
+                            <li>
+                                <a href="#" class="b-nav__link_sub">Whitepapers</a>
+                            </li>
+                            <li>
+                                <a href="#" class="b-nav__link_sub">Blog</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="b-nav__link">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="b-toggler_menu js-toggler_menu">
+                    <span>
+                        <span></span>
+                    </span>
+            </button>
+        </div>
+    </header>
+    <div class="b-content">
+        <section class="b-hero syndicator_content">
+            <div class="b-container_video">
+                <picture class="b-video__bg syndicator_content__bg">
+                    <source media="(max-width: 767px)" srcset="resources/img/content_syndicator_r_small.webp"
+                            type="image/webp">
+                    <source media="(max-width: 767px)" srcset="resources/img/content_syndicator_r_small.jpg"
+                            type="image/jpeg">
+                    <source media="(min-width: 768px)" srcset="resources/img/content_syndicator_r.webp"
+                            type="image/webp">
+                    <source media="(min-width: 768px)" srcset="resources/img/content_syndicator_r_small.jpg"
+                            type="image/jpeg">
+                    <img src="resources/img/content_syndicator_r_small.jpg" alt="">
+                </picture>
+                <div class="b-video__overlay"></div>
+            </div>
+            <div class="b-hero__content">
+                <h1 class="h1 b-hero__title">CONTENT SYNDICATION RESOURCE CENTER</h1>
+                <p class="b-hero__descr">Learn how to aggregate, transform and deliver your product content
+                </p>
+                <div class="b-hero__btns syndicator_content__btns">
+                    <a href="#" class="b-btn js-link_anchor">
+                            <span class="b-btn__wr_inner">
+                                <span class="b-btn__inner">BLOG</span>
+                            </span>
+                    </a>
+                    <a href="#syndicator" class="b-btn js-link_anchor">
+                            <span class="b-btn__wr_inner">
+                                <span class="b-btn__inner">CASE STUDIES</span>
+                            </span>
+                    </a>
+                    <a href="#syndicator" class="b-btn js-link_anchor">
+                            <span class="b-btn__wr_inner">
+                                <span class="b-btn__inner">E-BOOKS</span>
+                            </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="b-offices b-resources-blog js-posts">
+            <div class="b-offices__wr b-resources-blog__wr">
+                    <div class="b-wr_input b-resources-search-input">
+                        <input type="email" class="b-input" placeholder="Search post" name="search">
+                        <svg width="22" height="22">
+                            <use xlink:href="#file"></use>
+                        </svg>
+                    </div>
+                <div class="b-offices__title b-resources-blog__title">BLOG POSTS</div>
+                <div class="b-offices__container b-resources-blog__container_posts">
+                    <span class="b-office b-resources-blog-item">
+                            <picture>
+                                <source srcset="resources/img/offices/Tallin.webp" type="image/webp">
+                                <source srcset="resources/img/offices/Tallin.jpg" type="image/jpeg">
+                                <img src="resources/img/offices/Tallin.jpg" class="b-office__img" alt="Tallin">
+                            </picture>
+                            <span class="b-office__wr_content">
+                                <span class="b-office__content  b-resources-blog-item__content">
+                                    <p class="b-office__addr b-resources-blog-item__title">
+                                        <a href="#">What is CSP?</a>
+                                    </p>
+                                    <p class="b-resources-blog-item__date">April 4, 2019</p>
+                                    <span class="b-office__email b-resources-blog-item__desc">Defining a Сontent Service Provider 2 MIN READ </span>
+                                </span>
+                            </span>
+                        </span>
+                    <span class="b-office b-resources-blog-item">
+                            <picture>
+                                <source srcset="resources/img/offices/Kyiv.webp" type="image/webp">
+                                <source srcset="resources/img/offices/Kyiv.jpg" type="image/jpeg">
+                                <img src="resources/img/offices/Kyiv.jpg" class="b-office__img" alt="Kyiv">
+                            </picture>
+                            <span class="b-office__wr_content">
+                                <span class="b-office__content  b-resources-blog-item__content">
+                                    <p class="b-office__addr b-resources-blog-item__title">
+                                        <a href="#">What is CSP?</a>
+                                    </p>
+                                    <p class="b-resources-blog-item__date">April 4, 2019</p>
+                                    <span class="b-office__email b-resources-blog-item__desc">Defining a Сontent Service Provider 2 MIN READ </span>
+                                </span>
+                            </span>
+                        </span>
+                    <span class="b-office b-resources-blog-item">
+                            <picture>
+                                <source srcset="resources/img/offices/Kyiv-2.webp" type="image/webp">
+                                <source srcset="resources/img/offices/Kyiv-2.jpg" type="image/jpeg">
+                                <img src="resources/img/offices/Kyiv-2.jpg" class="b-office__img" alt="Kyiv">
+                            </picture>
+                            <span class="b-office__wr_content">
+                                <span class="b-office__content  b-resources-blog-item__content">
+                                    <p class="b-office__addr b-resources-blog-item__title">
+                                        <a href="#">What is CSP?</a>
+                                    </p>
+                                    <p class="b-resources-blog-item__date">April 4, 2019</p>
+                                    <span class="b-office__email b-resources-blog-item__desc">Defining a Сontent Service Provider 2 MIN READ </span>
+                                </span>
+                            </span>
+                        </span>
+                    <span class="b-office b-resources-blog-item">
+                            <picture>
+                                <source srcset="resources/img/offices/Kharkiv.webp" type="image/webp">
+                                <source srcset="resources/img/offices/Kharkiv.jpg" type="image/jpeg">
+                                <img src="resources/img/offices/Kharkiv.jpg" class="b-office__img" alt="Kharkiv">
+                            </picture>
+                            <span class="b-office__wr_content">
+                                <span class="b-office__content  b-resources-blog-item__content">
+                                    <p class="b-office__addr b-resources-blog-item__title">
+                                        <a href="#">What is CSP?</a>
+                                    </p>
+                                    <p class="b-resources-blog-item__date">April 4, 2019</p>
+                                    <span class="b-office__email b-resources-blog-item__desc">Defining a Сontent Service Provider 2 MIN READ </span>
+                                </span>
+                            </span>
+                        </span>
+                    <span class="b-office b-resources-blog-item">
+                            <picture>
+                                <source srcset="resources/img/offices/Tallin.webp" type="image/webp">
+                                <source srcset="resources/img/offices/Tallin.jpg" type="image/jpeg">
+                                <img src="resources/img/offices/Tallin.jpg" class="b-office__img" alt="Tallin">
+                            </picture>
+                            <span class="b-office__wr_content">
+                                <span class="b-office__content  b-resources-blog-item__content">
+                                    <p class="b-office__addr b-resources-blog-item__title">
+                                        <a href="#">What is CSP?</a>
+                                    </p>
+                                    <p class="b-resources-blog-item__date">April 4, 2019</p>
+                                    <span class="b-office__email b-resources-blog-item__desc">Defining a Сontent Service Provider 2 MIN READ </span>
+                                </span>
+                            </span>
+                        </span>
+                    <span class="b-office b-resources-blog-item">
+                            <picture>
+                                <source srcset="resources/img/offices/Kyiv.webp" type="image/webp">
+                                <source srcset="resources/img/offices/Kyiv.jpg" type="image/jpeg">
+                                <img src="resources/img/offices/Kyiv.jpg" class="b-office__img" alt="Kyiv">
+                            </picture>
+                            <span class="b-office__wr_content">
+                                <span class="b-office__content  b-resources-blog-item__content">
+                                    <p class="b-office__addr b-resources-blog-item__title">
+                                        <a href="#">What is CSP?</a>
+                                    </p>
+                                    <p class="b-resources-blog-item__date">April 4, 2019</p>
+                                    <span class="b-office__email b-resources-blog-item__desc">Defining a Сontent Service Provider 2 MIN READ </span>
+                                </span>
+                            </span>
+                        </span>
+                    <span class="b-office b-resources-blog-item">
+                            <picture>
+                                <source srcset="resources/img/offices/Kyiv-2.webp" type="image/webp">
+                                <source srcset="resources/img/offices/Kyiv-2.jpg" type="image/jpeg">
+                                <img src="resources/img/offices/Kyiv-2.jpg" class="b-office__img" alt="Kyiv">
+                            </picture>
+                            <span class="b-office__wr_content">
+                                <span class="b-office__content  b-resources-blog-item__content">
+                                    <p class="b-office__addr b-resources-blog-item__title">
+                                        <a href="#">What is CSP?</a>
+                                    </p>
+                                    <p class="b-resources-blog-item__date">April 4, 2019</p>
+                                    <span class="b-office__email b-resources-blog-item__desc">Defining a Сontent Service Provider 2 MIN READ </span>
+                                </span>
+                            </span>
+                        </span>
+                    <span class="b-office b-resources-blog-item">
+                            <picture>
+                                <source srcset="resources/img/offices/Kharkiv.webp" type="image/webp">
+                                <source srcset="resources/img/offices/Kharkiv.jpg" type="image/jpeg">
+                                <img src="resources/img/offices/Kharkiv.jpg" class="b-office__img" alt="Kharkiv">
+                            </picture>
+                            <span class="b-office__wr_content">
+                                <span class="b-office__content  b-resources-blog-item__content">
+                                    <p class="b-office__addr b-resources-blog-item__title">
+                                        <a href="#">What is CSP?</a>
+                                    </p>
+                                    <p class="b-resources-blog-item__date">April 4, 2019</p>
+                                    <span class="b-office__email b-resources-blog-item__desc">Defining a Сontent Service Provider 2 MIN READ </span>
+                                </span>
+                            </span>
+                        </span>
+                </div>
+                <button class="b-clients__toggler js-posts__toggler b-resources-blog__toggler" type="button">
+                        <span class="text">Show&nbsp;<span class="text_closed">more</span>
+                        <span class="text_opened">less</span>
+                        </span>
+                    <svg class="icon" width="23" height="24">
+                        <use xlink:href="#show-more"></use>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <section class="b-promo">
+            <div class="b-promo__wr">
+                <form class="b-promo__form js-form_promo" novalidate method="POST" action="/promo/">
+                    <span class="b-promo__title">Give me more details</span>
+                    <div class="b-wr_input">
+                        <input type="email" class="b-input" placeholder="email" name="email" required>
+                        <svg width="34" height="34">
+                            <use xlink:href="#email"></use>
+                        </svg>
+                    </div>
+                    <button class="b-btn" type="submit">
+                            <span class="b-btn__wr_inner">
+                                <span class="b-btn__inner">Request Free Demo</span>
+                            </span>
+                    </button>
+                    <div class="b-popups">
+                        <div class="b-form__popup b-popup b-popup_error js-popup_error">
+                            <div class="b-popup__wr_icon">
+                                <svg width="33" height="28">
+                                    <use xlink:href="#popup-warning"></use>
+                                </svg>
+                            </div>
+                            <span class="b-popup__text js-popup__text">Please try again later.</span>
+                            <button class="b-popup__close js-popup_close" type="button">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#popup-close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="b-form__popup b-popup b-popup_error js-popup_invalid">
+                            <div class="b-popup__wr_icon">
+                                <svg width="33" height="28">
+                                    <use xlink:href="#popup-warning"></use>
+                                </svg>
+                            </div>
+                            <span class="b-popup__text js-popup__text">Please enter a valid email</span>
+                            <!--
+                                                        <button class="b-popup__close js-popup_close" type="button">
+                                                            <svg width="28" height="28">
+                                                                <use xlink:href="#popup-close"></use>
+                                                            </svg>
+                                                        </button>
+                            -->
+                        </div>
+                        <div class="b-form__popup b-popup b-popup_success js-popup_success">
+                            <div class="b-popup__wr_icon">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#popup-success"></use>
+                                </svg>
+                            </div>
+                            <span class="b-popup__text js-popup__text">Thank you for getting in touch. We'll get back to you in up to 2 business days.</span>
+                            <button class="b-popup__close js-popup_close" type="button">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#popup-close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <article class="b-article b-article_active">
+            <span class="b-anchor" id="syndicator"></span>
+            <div class="b-article__wr">
+                <div class="b-article__container">
+                    <picture>
+                        <source srcset="resources/img/syndicator.webp" type="image/webp">
+                        <source srcset="resources/img/syndicator.png" type="image/jpeg">
+                        <img src="resources/img/syndicator.png" alt="" class="b-article__img">
+                    </picture>
+                    <div class="b-article__content">
+                        <div class="b-article__title">Syndicator</div>
+                        <p class="b-article__descr">Aggregate product data from multiple content sources, transform it
+                            and deliver to multiple retailers in their taxonomy. With Gepard Syndicator you'll master
+                            your A+ product data and create an exceptional shopping experience.<br><br>t is a long
+                            established fact that a reader will be distracted by the readable content of a page when
+                            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                            distribution of letters, as opposed to using</p>
+                    </div>
+                </div>
+                <a href="#" class="b-btn_dark">
+                        <span class="b-btn__wr_inner">
+                            <span class="b-btn__inner">Learn more</span>
+                        </span>
+                </a>
+            </div>
+        </article>
+        <article class="b-article_reverse">
+            <span class="b-anchor" id="pim"></span>
+            <div class="b-article__wr">
+                <div class="b-article__container">
+                    <picture>
+                        <source srcset="resources/img/pim.webp" type="image/webp">
+                        <source srcset="resources/img/pim.png" type="image/jpeg">
+                        <img src="resources/img/pim.png" alt="" class="b-article__img">
+                    </picture>
+                    <div class="b-article__content">
+                        <div class="b-article__title">PIM</div>
+                        <p class="b-article__descr">Collect product information, files and images from multiple sourc es
+                            to a single platform. With Gepard PIM you'd be able to efficiently optimize, enrich and
+                            share data with your e-commerce partners at the one place.<br><br>It is a long established
+                            fact that a reader will be distracted by the readable content of a page when looking at its
+                            layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                            letters,</p>
+                    </div>
+                </div>
+                <a href="#" class="b-btn">
+                        <span class="b-btn__wr_inner">
+                            <span class="b-btn__inner">Learn more</span>
+                        </span>
+                </a>
+            </div>
+        </article>
+        <article class="b-integrations">
+            <div class="b-integrations__wr">
+                <div class="b-integrations__logos">
+                    <img class="b-integration" alt=""
+                         src="resources/img/integrations/integration-amazon.svg">
+                    <img class="b-integration" alt=""
+                         src="resources/img/integrations/integration-xplace.svg">
+                    <img class="b-integration" alt=""
+                         src="resources/img/integrations/integration-lazada.svg">
+                    <img class="b-integration" alt=""
+                         src="resources/img/integrations/integration-cdiscount.svg">
+                    <img class="b-integration" alt=""
+                         src="resources/img/integrations/integration-icecat.svg">
+                    <picture>
+                        <source srcset="resources/img/integrations/integration-tradeplace.webp 1x,
+                                            resources/img/integrations/integration-tradeplace@2x.webp 2x,
+                                            resources/img/integrations/integration-tradeplace@3x.webp 3x"
+                                type="image/webp">
+                        <source srcset="resources/img/integrations/integration-tradeplace.png 1x,
+                                            resources/img/integrations/integration-tradeplace@2x.png 2x,
+                                            resources/img/integrations/integration-tradeplace@3x.png 3x"
+                                type="image/png">
+                        <img class="b-integration" alt=""
+                             src="resources/img/integrations/integration-tradeplace.png"
+                             srcset="resources/img/integrations/integration-tradeplace@2x.png 2x,
+                                        resources/img/integrations/integration-tradeplace@3x.png 3x">
+                    </picture>
+                    <picture>
+                        <source srcset="resources/img/integrations/integration-stibo.webp 1x,
+                                            resources/img/integrations/integration-stibo@2x.webp 2x,
+                                            resources/img/integrations/integration-stibo@3x.webp 3x"
+                                type="image/webp">
+                        <source srcset="resources/img/integrations/integration-stibo.png 1x,
+                                            resources/img/integrations/integration-stibo@2x.png 2x,
+                                            resources/img/integrations/integration-stibo@3x.png 3x" type="image/png">
+                        <img class="b-integration" alt=""
+                             src="resources/img/integrations/integration-stibo.png"
+                             srcset="resources/img/integrations/integration-stibo@2x.png 2x,
+                                        resources/img/integrations/integration-stibo@3x.png 3x">
+                    </picture>
+                </div>
+                <div class="b-integrations__content">
+                    <div class="b-integrations__title">Third-party integrations</div>
+                    <p class="b-integrations__descr">Interested in using Gepard connected to your current software? We
+                        could easily integrate Gepard with your PIM/ERP/DAM/MDM solutions. Moreover, any marketplaces,
+                        content providers and other e-commerce platforms could be directly tied in.</p>
+                </div>
+            </div>
+        </article>
+        <section class="b-case b-case_reverse">
+            <span class="b-anchor" id="case"></span>
+            <picture class="b-case__pic">
+                <source media="(max-width: 767px)" srcset="resources/img/cases/case-amazon-sm.webp" type="image/webp">
+                <source media="(max-width: 767px)" srcset="resources/img/cases/case-amazon-sm.jpg" type="image/jpeg">
+                <source media="(min-width: 768px)" srcset="resources/img/cases/case-amazon.webp" type="image/webp">
+                <source media="(min-width: 768px)" srcset="resources/img/cases/case-amazon.jpg" type="image/jpeg">
+                <img src="resources/img/cases/case-amazon.jpg" alt="">
+            </picture>
+            <div class="b-case__container">
+                <div class="b-case__wr">
+                    <div class="b-case__content">
+                        <div class="b-case__common">
+                            <img class="b-case__logo" alt=""
+                                 src="resources/img/cases/case-logo-hp.svg">
+
+                            <!--
+                                                            <svg class="b-case__logo" width="40" height="40">
+                                                                <use xlink:href="#case-logo-hp"></use>
+                                                            </svg>
+                            -->
+                            <div class="b-case__title_common">Case Study</div>
+                        </div>
+                        <div class="b-case__title">HOW GEPARD SET UP HP DATA TRANSFORMATION FOR AMAZON</div>
+                        <a href="resources/img/case-amazon.jpg" class="b-btn" download>
+                                <span class="b-btn__wr_inner">
+                                    <span class="b-btn__inner">Download</span>
+                                </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="b-case b-case_dark">
+            <picture class="b-case__pic">
+                <source media="(max-width: 767px)" srcset="resources/img/cases/case-gs1-sm.webp" type="image/webp">
+                <source media="(max-width: 767px)" srcset="resources/img/cases/case-gs1-sm.jpg" type="image/jpeg">
+                <source media="(min-width: 768px)" srcset="resources/img/cases/case-gs1.webp" type="image/webp">
+                <source media="(min-width: 768px)" srcset="resources/img/cases/case-gs1.jpg" type="image/jpeg">
+                <img src="resources/img/cases/case-gs1.jpg" alt="">
+            </picture>
+            <div class="b-case__container">
+                <div class="b-case__wr">
+                    <div class="b-case__content">
+                        <div class="b-case__common">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="resources/img/cases/case-logo-gs1-white.svg">
+                                <source media="(min-width: 768px)" srcset="resources/img/cases/case-logo-gs1-pink.svg">
+                                <img class="b-case__logo" src="resources/img/cases/case-logo-gs1-pink.svg" alt="">
+                            </picture>
+                            <!--
+                                                            <img class="b-case__logo" alt=""
+                                                                   src="resources/img/cases/case-logo-gs1.svg">
+                            -->
+                            <div class="b-case__title_common">Case Study</div>
+                        </div>
+                        <div class="b-case__title">How GS1 Created the Fashion Base Portal for Dutch Suppliers</div>
+                        <a href="resources/img/case-gsi.jpg" class="b-btn_dark" download>
+                                <span class="b-btn__wr_inner">
+                                    <span class="b-btn__inner">Download</span>
+                                </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="b-contactus">
+            <div class="b-contactus__wr">
+                <div class="b-contactus__title">Contact Us</div>
+                <form class="b-form_contactus js-form_contactus is-popup_visible" novalidate method="POST"
+                      action='/contactus/'>
+                    <div class="b-contactus__block_checkboxes">
+                        <div class="b-contactus__title_sub">Interested in*</div>
+                        <label class="b-label_checkbox">
+                            <input type="checkbox" name="interests" value="syndication">
+                            <span class="b-label__text">Data Syndication &amp; Transformation</span>
+                        </label>
+                        <label class="b-label_checkbox">
+                            <input type="checkbox" name="interests" value="pim">
+                            <span class="b-label__text">PIM (Product Information Management)</span>
+                        </label>
+                        <label class="b-label_checkbox">
+                            <input type="checkbox" name="interests" value="custom">
+                            <span class="b-label__text">Custom Solution</span>
+                        </label>
+                        <label class="b-label_checkbox">
+                            <input type="checkbox" name="interests" value="other">
+                            <span class="b-label__text">Other Inquiry</span>
+                        </label>
+                    </div>
+                    <div class="b-contactus__block_email">
+                        <div class="b-contactus__title_sub">Business Email*</div>
+                        <div class="b-wr_input">
+                            <input type="email" class="b-input" placeholder="email" name="email" required>
+                            <svg width="34" height="34">
+                                <use xlink:href="#email"></use>
+                            </svg>
+                        </div>
+                        <button class="b-btn_dark" type="submit">
+                                <span class="b-btn__wr_inner">
+                                    <span class="b-btn__inner">Get in Touch</span>
+                                </span>
+                        </button>
+                    </div>
+                    <div class="b-popups">
+                        <div class="b-form__popup b-popup b-popup_error js-popup_invalid">
+                            <div class="b-popup__wr_icon">
+                                <svg width="33" height="28">
+                                    <use xlink:href="#popup-warning"></use>
+                                </svg>
+                            </div>
+                            <span class="b-popup__text js-popup__text">Please enter a valid email and choose at least one category of interest</span>
+                            <!--
+                                                        <button class="b-popup__close js-popup_close" type="button">
+                                                            <svg width="28" height="28">
+                                                                <use xlink:href="#popup-close"></use>
+                                                            </svg>
+                                                        </button>
+                            -->
+                        </div>
+                        <div class="b-form__popup b-popup b-popup_error js-popup_error">
+                            <div class="b-popup__wr_icon">
+                                <svg width="33" height="28">
+                                    <use xlink:href="#popup-warning"></use>
+                                </svg>
+                            </div>
+                            <span class="b-popup__text js-popup__text">Please try again later.</span>
+                            <button class="b-popup__close js-popup_close" type="button">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#popup-close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="b-form__popup b-popup b-popup_success js-popup_success">
+                            <div class="b-popup__wr_icon">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#popup-success"></use>
+                                </svg>
+                            </div>
+                            <span class="b-popup__text js-popup__text">Thank you for getting in touch. We'll get back to you in up to 2 business days.</span>
+                            <button class="b-popup__close js-popup_close" type="button">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#popup-close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer class="b-footer">
+        <div class="b-footer__wr">
+            <div class="b-footer__nav">
+                <ul class="b-footer__list b-footer__list_contacts">
+                    <li>
+                        <!--                        <span class="b-footer__link b-footer__link_contact">4A Mytropolyta Andreia Sheptytskoho Street, Kyiv, 02002, Ukraine</span>-->
+                        <span class="b-footer__link b-footer__link_contact">Copyright © 2019 Gepard.  All rights reserved</span>
+                    </li>
+                    <!--
+                                        <li>
+                                            <a href="tel:" class="b-footer__link b-footer__link_contact">phone</a>
+                                        </li>
+                    -->
+                    <li>
+                        <a href="mailto:info@gepard.io" class="b-footer__link b-footer__link_contact">info@gepard.io</a>
+                    </li>
+                </ul>
+                <!--
+                                <ul class="b-footer__list b-footer__list_links">
+                                    <li>
+                                        <a href="#" class="b-footer__link b-footer__link_nav">PRIVACY POLICY</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="b-footer__link b-footer__link_nav">TERMS OF SERVICE</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="b-footer__link b-footer__link_nav">SITEMAP</a>
+                                    </li>
+                                </ul>
+                -->
+            </div>
+            <ul class="b-footer__nav_social">
+                <li>
+                    <a href="" class="b-footer__link_social b-footer__link">
+                        <svg width="51" height="51">
+                            <use xlink:href="#linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="b-footer__link_social b-footer__link">
+                        <svg width="51" height="51">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="b-footer__link_social b-footer__link">
+                        <svg width="51" height="51">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+
+<!--
+    <script>
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='/node_modules/jquery/dist/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+-->
+</body>
+</html>
