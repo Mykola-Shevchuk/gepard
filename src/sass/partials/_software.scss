@@ -1,7 +1,6 @@
-.b-software {
+.no-webp .b-software-bg  {
+  background: url("../resources/img/content-syndicator-software.jpg") no-repeat right top;
   height: 500px;
-  background: url("../resources/img/content-syndicator-software.webp"),
-  url("../resources/img/content-syndicator-software.jpg") no-repeat right top;
   background-size: cover;
 
   @include media('<desktop') {
@@ -13,14 +12,32 @@
     height: auto;
     background: $white no-repeat center center;
   }
-  
+}
+
+.webp .b-software-bg {
+  background: url("../resources/img/content-syndicator-software.webp") no-repeat right top;
+  height: 500px;
+  background-size: cover;
+
+  @include media('<desktop') {
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  @include media('<tabletLg') {
+    height: auto;
+    background: $white no-repeat center center;
+  }
+}
+
+.b-software {
   &__wr {
     @include media('<tabletLg') {
       position: static;
       padding-bottom: 0;
     }
   }
-  
+
   &__container {
     @include media('<tabletLg') {
       padding-left: 50px;
@@ -32,11 +49,11 @@
       padding-right: 0;
     }
   }
-  
+
   &__container-tablet {
     display: none;
     max-height: 650px;
-    
+
     & img {
       width: 100%;
       max-height: 650px;
@@ -46,7 +63,7 @@
       display: block;
     }
   }
-  
+
   &__title {
     @include media('<tabletLg') {
       padding-left: 30px;
@@ -60,7 +77,7 @@
       padding-left: 30px;
     }
   }
-  
+
   &__item {
     width: 100%;
 
@@ -72,7 +89,7 @@
       padding-left: 0;
     }
   }
-  
+
   &__item-title {
     line-height: initial;
     padding-left: 10px;
