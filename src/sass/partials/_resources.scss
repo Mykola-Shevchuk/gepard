@@ -165,3 +165,130 @@
     }
 }
 
+.b-resources-join {
+    &:hover {
+       .b-resources-join__title,
+       .b-resources-join__subtitle {
+           color: $white;
+       }
+    }
+
+    &__title {
+        @include media('<phoneLg') {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    &__subtitle {
+        @include media('<phoneLg') {
+            display: block;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    &__form {
+        justify-content: center;
+    }
+
+    &__input {
+        max-width: 500px;
+
+        @include media('<tabletSm') {
+            max-width: 100%;
+        }
+    }
+}
+
+.b-resources-case-study {
+    color: $white;
+    padding: 80px 0;
+
+    @include gradient__dark_angled;
+
+    &__title {
+        font-size: 22px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__item {
+        width: 49%;
+        padding-bottom: 30px;
+
+        @include media('<tabletLg') {
+            padding: 20px;
+            width: 100%;
+        }
+    }
+
+    &__toggler {
+        margin: 50px auto 0;
+        color: $white;
+
+        &:hover {
+            color: $grey_about;
+        }
+
+        @include media('<tabletSm') {
+            position: static;
+        }
+    }
+
+    &__pic {
+        img {
+            min-height: 300px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 50px 0 0 0;
+        max-height: 350px;
+        overflow: hidden;
+        transition: max-height $time_trans ease;
+
+        @include media('<tabletLg') {
+            max-height: 740px;
+            height: auto;
+        }
+    }
+
+    &.opened {
+        @include media('<tabletSm') {
+            padding: 40px 0;
+        }
+
+        .text {
+            &_opened {
+                display: inline;
+            }
+
+            &_closed {
+                display: none;
+            }
+        }
+
+
+        .b-resources-case-study {
+            &__container {
+                max-height: 740px;
+
+                @include media('<desktop') {
+                    max-height: 1480px;
+                    height: auto;
+                }
+
+                @include media('<tabletLg') {
+                    max-height: 2960px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+}

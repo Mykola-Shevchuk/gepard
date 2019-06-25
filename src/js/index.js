@@ -3,6 +3,7 @@ import "./partials/helpers";
 import "@comp/clients";
 import "@comp/team";
 import "@comp/posts";
+import "@comp/cases";
 
 import tabsSyndicator from "@comp/tabs/syndicator";
 import sliderResponces from "@comp/sliders/responces";

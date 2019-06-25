@@ -178,7 +178,7 @@
         </section>
         <section class="b-offices b-resources-blog js-posts">
             <div class="b-offices__wr b-resources-blog__wr">
-                    <div class="b-wr_input b-resources-search-input">
+                <div class="b-wr_input b-resources-search-input">
                         <input type="email" class="b-input" placeholder="Search post" name="search">
                         <svg width="22" height="22">
                             <use xlink:href="#file"></use>
@@ -325,12 +325,12 @@
                 </button>
             </div>
         </section>
-
-        <section class="b-promo">
+        <section class="b-promo b-resources-join">
+            <div class="b-targets__title b-target-transformation__title b-resources-join__title">Join our monthly newsletter</div>
+            <p class="b-target-transformation__subtitle b-resources-join__subtitle">Get tips on product content optimization directly into your inbox</p>
             <div class="b-promo__wr">
-                <form class="b-promo__form js-form_promo" novalidate method="POST" action="/promo/">
-                    <span class="b-promo__title">Give me more details</span>
-                    <div class="b-wr_input">
+                <form class="b-promo__form js-form_promo b-resources-join__form" novalidate method="POST" action="">
+                    <div class="b-wr_input b-resources-join__input">
                         <input type="email" class="b-input" placeholder="email" name="email" required>
                         <svg width="34" height="34">
                             <use xlink:href="#email"></use>
@@ -387,107 +387,57 @@
                 </form>
             </div>
         </section>
-        <article class="b-article b-article_active">
-            <span class="b-anchor" id="syndicator"></span>
-            <div class="b-article__wr">
-                <div class="b-article__container">
-                    <picture>
-                        <source srcset="resources/img/syndicator.webp" type="image/webp">
-                        <source srcset="resources/img/syndicator.png" type="image/jpeg">
-                        <img src="resources/img/syndicator.png" alt="" class="b-article__img">
+
+        <section class="b-resources-case-study js-cases">
+            <div class="b-resources-case-study__title">Case studies</div>
+            <div class="b-resources-case-study__container">
+                <div class="b-resources-case-study__item">
+                    <picture class="b-case__pic b-resources-case-study__pic">
+                        <source media="(max-width: 767px)" srcset="resources/img/cases/case-amazon-sm.webp" type="image/webp">
+                        <source media="(max-width: 767px)" srcset="resources/img/cases/case-amazon-sm.jpg" type="image/jpeg">
+                        <source media="(min-width: 768px)" srcset="resources/img/cases/case-amazon.webp" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="resources/img/cases/case-amazon.jpg" type="image/jpeg">
+                        <img src="resources/img/cases/case-amazon.jpg" alt="">
                     </picture>
-                    <div class="b-article__content">
-                        <div class="b-article__title">Syndicator</div>
-                        <p class="b-article__descr">Aggregate product data from multiple content sources, transform it
-                            and deliver to multiple retailers in their taxonomy. With Gepard Syndicator you'll master
-                            your A+ product data and create an exceptional shopping experience.<br><br>t is a long
-                            established fact that a reader will be distracted by the readable content of a page when
-                            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                            distribution of letters, as opposed to using</p>
-                    </div>
                 </div>
-                <a href="#" class="b-btn_dark">
-                        <span class="b-btn__wr_inner">
-                            <span class="b-btn__inner">Learn more</span>
+                <div class="b-resources-case-study__item">
+                    <picture class="b-case__pic b-resources-case-study__pic">
+                        <source media="(max-width: 767px)" srcset="resources/img/cases/case-gs1-sm.webp" type="image/webp">
+                        <source media="(max-width: 767px)" srcset="resources/img/cases/case-gs1-sm.jpg" type="image/jpeg">
+                        <source media="(min-width: 768px)" srcset="resources/img/cases/case-gs1.webp" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="resources/img/cases/case-gs1.jpg" type="image/jpeg">
+                        <img src="resources/img/cases/case-gs1.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="b-resources-case-study__item">
+                    <picture class="b-case__pic b-resources-case-study__pic">
+                        <source media="(max-width: 767px)" srcset="resources/img/cases/case-amazon-sm.webp" type="image/webp">
+                        <source media="(max-width: 767px)" srcset="resources/img/cases/case-amazon-sm.jpg" type="image/jpeg">
+                        <source media="(min-width: 768px)" srcset="resources/img/cases/case-amazon.webp" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="resources/img/cases/case-amazon.jpg" type="image/jpeg">
+                        <img src="resources/img/cases/case-amazon.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="b-resources-case-study__item">
+                    <picture class="b-case__pic b-resources-case-study__pic">
+                        <source media="(max-width: 767px)" srcset="resources/img/cases/case-gs1-sm.webp" type="image/webp">
+                        <source media="(max-width: 767px)" srcset="resources/img/cases/case-gs1-sm.jpg" type="image/jpeg">
+                        <source media="(min-width: 768px)" srcset="resources/img/cases/case-gs1.webp" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="resources/img/cases/case-gs1.jpg" type="image/jpeg">
+                        <img src="resources/img/cases/case-gs1.jpg" alt="">
+                    </picture>
+                </div>
+            </div>
+            <button class="b-clients__toggler b-resources-case-study__toggler js-cases__toggler" type="button">
+                        <span class="text">Show&nbsp;<span class="text_closed">more</span>
+                        <span class="text_opened">less</span>
                         </span>
-                </a>
-            </div>
-        </article>
-        <article class="b-article_reverse">
-            <span class="b-anchor" id="pim"></span>
-            <div class="b-article__wr">
-                <div class="b-article__container">
-                    <picture>
-                        <source srcset="resources/img/pim.webp" type="image/webp">
-                        <source srcset="resources/img/pim.png" type="image/jpeg">
-                        <img src="resources/img/pim.png" alt="" class="b-article__img">
-                    </picture>
-                    <div class="b-article__content">
-                        <div class="b-article__title">PIM</div>
-                        <p class="b-article__descr">Collect product information, files and images from multiple sourc es
-                            to a single platform. With Gepard PIM you'd be able to efficiently optimize, enrich and
-                            share data with your e-commerce partners at the one place.<br><br>It is a long established
-                            fact that a reader will be distracted by the readable content of a page when looking at its
-                            layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-                            letters,</p>
-                    </div>
-                </div>
-                <a href="#" class="b-btn">
-                        <span class="b-btn__wr_inner">
-                            <span class="b-btn__inner">Learn more</span>
-                        </span>
-                </a>
-            </div>
-        </article>
-        <article class="b-integrations">
-            <div class="b-integrations__wr">
-                <div class="b-integrations__logos">
-                    <img class="b-integration" alt=""
-                         src="resources/img/integrations/integration-amazon.svg">
-                    <img class="b-integration" alt=""
-                         src="resources/img/integrations/integration-xplace.svg">
-                    <img class="b-integration" alt=""
-                         src="resources/img/integrations/integration-lazada.svg">
-                    <img class="b-integration" alt=""
-                         src="resources/img/integrations/integration-cdiscount.svg">
-                    <img class="b-integration" alt=""
-                         src="resources/img/integrations/integration-icecat.svg">
-                    <picture>
-                        <source srcset="resources/img/integrations/integration-tradeplace.webp 1x,
-                                            resources/img/integrations/integration-tradeplace@2x.webp 2x,
-                                            resources/img/integrations/integration-tradeplace@3x.webp 3x"
-                                type="image/webp">
-                        <source srcset="resources/img/integrations/integration-tradeplace.png 1x,
-                                            resources/img/integrations/integration-tradeplace@2x.png 2x,
-                                            resources/img/integrations/integration-tradeplace@3x.png 3x"
-                                type="image/png">
-                        <img class="b-integration" alt=""
-                             src="resources/img/integrations/integration-tradeplace.png"
-                             srcset="resources/img/integrations/integration-tradeplace@2x.png 2x,
-                                        resources/img/integrations/integration-tradeplace@3x.png 3x">
-                    </picture>
-                    <picture>
-                        <source srcset="resources/img/integrations/integration-stibo.webp 1x,
-                                            resources/img/integrations/integration-stibo@2x.webp 2x,
-                                            resources/img/integrations/integration-stibo@3x.webp 3x"
-                                type="image/webp">
-                        <source srcset="resources/img/integrations/integration-stibo.png 1x,
-                                            resources/img/integrations/integration-stibo@2x.png 2x,
-                                            resources/img/integrations/integration-stibo@3x.png 3x" type="image/png">
-                        <img class="b-integration" alt=""
-                             src="resources/img/integrations/integration-stibo.png"
-                             srcset="resources/img/integrations/integration-stibo@2x.png 2x,
-                                        resources/img/integrations/integration-stibo@3x.png 3x">
-                    </picture>
-                </div>
-                <div class="b-integrations__content">
-                    <div class="b-integrations__title">Third-party integrations</div>
-                    <p class="b-integrations__descr">Interested in using Gepard connected to your current software? We
-                        could easily integrate Gepard with your PIM/ERP/DAM/MDM solutions. Moreover, any marketplaces,
-                        content providers and other e-commerce platforms could be directly tied in.</p>
-                </div>
-            </div>
-        </article>
+                <svg class="icon" width="23" height="24">
+                    <use xlink:href="#show-more"></use>
+                </svg>
+            </button>
+        </section>
+
         <section class="b-case b-case_reverse">
             <span class="b-anchor" id="case"></span>
             <picture class="b-case__pic">
