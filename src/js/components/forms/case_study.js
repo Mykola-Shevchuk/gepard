@@ -3,9 +3,9 @@ import {sendXHR, inputHandler} from './_partials';
 if (document.body.contains(document.querySelector('.js-form_case_study'))) {
   const form = document.querySelector('.js-form_case_study');
   const checkboxNodes = form.querySelectorAll('input[type=checkbox]');
-  const emailNode = form.querySelector('input[type=email]');
-  const nameNode = form.querySelector('input[name=name]');
-  const websiteNode = form.querySelector('input[name=website]');
+  const emailNode = form.querySelector('.ContactsEmail');
+  const nameNode = form.querySelector('.ContactsName');
+  const websiteNode = form.querySelector('.ContactsWebsite');
   const url = form.action;
   const method = form.method;
 
