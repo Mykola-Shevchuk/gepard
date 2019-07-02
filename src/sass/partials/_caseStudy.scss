@@ -134,20 +134,27 @@
 }
 
 .b-case-study-info {
-  background: $white
-  url("../resources/img/case-study/article-bg.jpg") no-repeat right top;
-  background-size: contain;
+  position: relative;
 
-  @include media('<hd'){
-    background-size: cover;
-  }
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: $white no-repeat right top;
+    background-size: contain;
 
-  @include media('<laptop'){
-    background-position: 55% 0;
-  }
+    @include media('<hd'){
+      background-size: cover;
+    }
 
-  @include media('<desktop'){
-    background: $white;
+    @include media('<laptop'){
+      background-position: 55% 0;
+    }
+
+    @include media('<desktop'){
+      background: $white !important;
+    }
   }
 }
 

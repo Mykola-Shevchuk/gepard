@@ -3489,17 +3489,23 @@ a.b-footer__link {
       fill: #FFFFFF; }
 
 .b-case-study-info {
-  background: #FFFFFF url("../resources/img/case-study/article-bg.jpg") no-repeat right top;
-  background-size: contain; }
-  @media (max-width: 1919px) {
-    .b-case-study-info {
-      background-size: cover; } }
-  @media (max-width: 1365px) {
-    .b-case-study-info {
-      background-position: 55% 0; } }
-  @media (max-width: 1279px) {
-    .b-case-study-info {
-      background: #FFFFFF; } }
+  position: relative; }
+  .b-case-study-info__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #FFFFFF no-repeat right top;
+    background-size: contain; }
+    @media (max-width: 1919px) {
+      .b-case-study-info__bg {
+        background-size: cover; } }
+    @media (max-width: 1365px) {
+      .b-case-study-info__bg {
+        background-position: 55% 0; } }
+    @media (max-width: 1279px) {
+      .b-case-study-info__bg {
+        background: #FFFFFF !important; } }
 
 .b-case-study-article {
   padding: 20px 0 100px 23px; }
