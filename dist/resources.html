@@ -178,7 +178,7 @@
         </section>
         <section class="b-offices b-resources-blog js-posts">
             <div class="b-offices__wr b-resources-blog__wr">
-                    <div class="b-wr_input b-resources-search-input">
+                <div class="b-wr_input b-resources-search-input">
                         <input type="email" class="b-input" placeholder="Search post" name="search">
                         <svg width="22" height="22">
                             <use xlink:href="#file"></use>
@@ -325,92 +325,110 @@
                 </button>
             </div>
         </section>
+        <section class="b-promo b-resources-join">
+            <div class="b-targets__title b-target-transformation__title b-resources-join__title">Join our monthly newsletter</div>
+            <p class="b-target-transformation__subtitle b-resources-join__subtitle">Get tips on product content optimization directly into your inbox</p>
+            <div class="b-promo__wr">
+                <form class="b-promo__form js-form_promo b-resources-join__form" novalidate method="POST" action="">
+                    <div class="b-wr_input b-resources-join__input">
+                        <input type="email" class="b-input" placeholder="email" name="email" required>
+                        <svg width="34" height="34">
+                            <use xlink:href="#email"></use>
+                        </svg>
+                    </div>
+                    <button class="b-btn" type="submit">
+                            <span class="b-btn__wr_inner">
+                                <span class="b-btn__inner">Request Free Demo</span>
+                            </span>
+                    </button>
+                    <div class="b-popups">
+                        <div class="b-form__popup b-popup b-popup_error js-popup_error">
+                            <div class="b-popup__wr_icon">
+                                <svg width="33" height="28">
+                                    <use xlink:href="#popup-warning"></use>
+                                </svg>
+                            </div>
+                            <span class="b-popup__text js-popup__text">Please try again later.</span>
+                            <button class="b-popup__close js-popup_close" type="button">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#popup-close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="b-form__popup b-popup b-popup_error js-popup_invalid">
+                            <div class="b-popup__wr_icon">
+                                <svg width="33" height="28">
+                                    <use xlink:href="#popup-warning"></use>
+                                </svg>
+                            </div>
+                            <span class="b-popup__text js-popup__text">Please enter a valid email</span>
+                            <!--
+                                                        <button class="b-popup__close js-popup_close" type="button">
+                                                            <svg width="28" height="28">
+                                                                <use xlink:href="#popup-close"></use>
+                                                            </svg>
+                                                        </button>
+                            -->
+                        </div>
+                        <div class="b-form__popup b-popup b-popup_success js-popup_success">
+                            <div class="b-popup__wr_icon">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#popup-success"></use>
+                                </svg>
+                            </div>
+                            <span class="b-popup__text js-popup__text">Thank you for getting in touch. We'll get back to you in up to 2 business days.</span>
+                            <button class="b-popup__close js-popup_close" type="button">
+                                <svg width="28" height="28">
+                                    <use xlink:href="#popup-close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
 
-        <section class="b-resources-ebooks js-ebooks">
-            <div class="b-resources-ebooks__title">E-books</div>
-            <div class="b-resources-ebooks__content">
-                <div class="b-resources-ebooks-list__item">
-                    <div class="b-resources-ebooks-list__img">
-                        <picture>
-                            <source srcset="resources/img/offices/Tallin.webp" type="image/webp">
-                            <source srcset="resources/img/offices/Tallin.jpg" type="image/jpeg">
-                            <img src="resources/img/offices/Tallin.jpg" alt="Tallin">
-                        </picture>
-                    </div>
-                    <div class="b-resources-ebooks-list__desc">
-                        <div class="b-resources-ebook-desc__title">Title 1</div>
-                        <div class="b-resources-ebook-desc__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi minima totam. Architecto, autem culpa dicta distinctio dolores fugit ipsam necessitatibus sit! Accusantium, alias impedit itaque quidem quisquam repudiandae temporibus?</div>
-                        <div class="b-resources-ebook-desc__btn">
-                            <a href="#" class="b-btn js-link_anchor">
-                                <span class="b-btn__wr_inner">
-                                    <span class="b-btn__inner">Download whitepaper</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
+        <section class="b-resources-case-study js-cases">
+            <div class="b-resources-case-study__title">Case studies</div>
+            <div class="b-resources-case-study__container">
+                <div class="b-resources-case-study__item">
+                    <picture class="b-case__pic b-resources-case-study__pic">
+                        <source media="(max-width: 767px)" srcset="resources/img/cases/case-amazon-sm.webp" type="image/webp">
+                        <source media="(max-width: 767px)" srcset="resources/img/cases/case-amazon-sm.jpg" type="image/jpeg">
+                        <source media="(min-width: 768px)" srcset="resources/img/cases/case-amazon.webp" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="resources/img/cases/case-amazon.jpg" type="image/jpeg">
+                        <img src="resources/img/cases/case-amazon.jpg" alt="">
+                    </picture>
                 </div>
-                <div class="b-resources-ebooks-list__item">
-                    <div class="b-resources-ebooks-list__img">
-                        <picture>
-                            <source srcset="resources/img/offices/Tallin.webp" type="image/webp">
-                            <source srcset="resources/img/offices/Tallin.jpg" type="image/jpeg">
-                            <img src="resources/img/offices/Tallin.jpg" alt="Tallin">
-                        </picture>
-                    </div>
-                    <div class="b-resources-ebooks-list__desc">
-                        <div class="b-resources-ebook-desc__title">Title 2</div>
-                        <div class="b-resources-ebook-desc__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi minima totam. Architecto, autem culpa dicta distinctio dolores fugit ipsam necessitatibus sit! Accusantium, alias impedit itaque quidem quisquam repudiandae temporibus?</div>
-                        <div class="b-resources-ebook-desc__btn">
-                            <a href="#" class="b-btn js-link_anchor">
-                                <span class="b-btn__wr_inner">
-                                    <span class="b-btn__inner">Download whitepaper</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
+                <div class="b-resources-case-study__item">
+                    <picture class="b-case__pic b-resources-case-study__pic">
+                        <source media="(max-width: 767px)" srcset="resources/img/cases/case-gs1-sm.webp" type="image/webp">
+                        <source media="(max-width: 767px)" srcset="resources/img/cases/case-gs1-sm.jpg" type="image/jpeg">
+                        <source media="(min-width: 768px)" srcset="resources/img/cases/case-gs1.webp" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="resources/img/cases/case-gs1.jpg" type="image/jpeg">
+                        <img src="resources/img/cases/case-gs1.jpg" alt="">
+                    </picture>
                 </div>
-                <div class="b-resources-ebooks-list__item">
-                    <div class="b-resources-ebooks-list__img">
-                        <picture>
-                            <source srcset="resources/img/offices/Tallin.webp" type="image/webp">
-                            <source srcset="resources/img/offices/Tallin.jpg" type="image/jpeg">
-                            <img src="resources/img/offices/Tallin.jpg" alt="Tallin">
-                        </picture>
-                    </div>
-                    <div class="b-resources-ebooks-list__desc">
-                        <div class="b-resources-ebook-desc__title">Title 3</div>
-                        <div class="b-resources-ebook-desc__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi minima totam. Architecto, autem culpa dicta distinctio dolores fugit ipsam necessitatibus sit! Accusantium, alias impedit itaque quidem quisquam repudiandae temporibus?</div>
-                        <div class="b-resources-ebook-desc__btn">
-                            <a href="#" class="b-btn js-link_anchor">
-                                <span class="b-btn__wr_inner">
-                                    <span class="b-btn__inner">Download whitepaper</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
+                <div class="b-resources-case-study__item">
+                    <picture class="b-case__pic b-resources-case-study__pic">
+                        <source media="(max-width: 767px)" srcset="resources/img/cases/case-amazon-sm.webp" type="image/webp">
+                        <source media="(max-width: 767px)" srcset="resources/img/cases/case-amazon-sm.jpg" type="image/jpeg">
+                        <source media="(min-width: 768px)" srcset="resources/img/cases/case-amazon.webp" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="resources/img/cases/case-amazon.jpg" type="image/jpeg">
+                        <img src="resources/img/cases/case-amazon.jpg" alt="">
+                    </picture>
                 </div>
-                <div class="b-resources-ebooks-list__item">
-                    <div class="b-resources-ebooks-list__img">
-                        <picture>
-                            <source srcset="resources/img/offices/Tallin.webp" type="image/webp">
-                            <source srcset="resources/img/offices/Tallin.jpg" type="image/jpeg">
-                            <img src="resources/img/offices/Tallin.jpg" alt="Tallin">
-                        </picture>
-                    </div>
-                    <div class="b-resources-ebooks-list__desc">
-                        <div class="b-resources-ebook-desc__title">Title 4</div>
-                        <div class="b-resources-ebook-desc__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi minima totam. Architecto, autem culpa dicta distinctio dolores fugit ipsam necessitatibus sit! Accusantium, alias impedit itaque quidem quisquam repudiandae temporibus?</div>
-                        <div class="b-resources-ebook-desc__btn">
-                            <a href="#" class="b-btn js-link_anchor">
-                                <span class="b-btn__wr_inner">
-                                    <span class="b-btn__inner">Download whitepaper</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
+                <div class="b-resources-case-study__item">
+                    <picture class="b-case__pic b-resources-case-study__pic">
+                        <source media="(max-width: 767px)" srcset="resources/img/cases/case-gs1-sm.webp" type="image/webp">
+                        <source media="(max-width: 767px)" srcset="resources/img/cases/case-gs1-sm.jpg" type="image/jpeg">
+                        <source media="(min-width: 768px)" srcset="resources/img/cases/case-gs1.webp" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="resources/img/cases/case-gs1.jpg" type="image/jpeg">
+                        <img src="resources/img/cases/case-gs1.jpg" alt="">
+                    </picture>
                 </div>
             </div>
-            <button class="b-clients__toggler js-ebooks__toggler b-resources-ebooks__toggler" type="button">
+            <button class="b-clients__toggler b-resources-case-study__toggler js-cases__toggler" type="button">
                         <span class="text">Show&nbsp;<span class="text_closed">more</span>
                         <span class="text_opened">less</span>
                         </span>
@@ -418,6 +436,73 @@
                     <use xlink:href="#show-more"></use>
                 </svg>
             </button>
+        </section>
+
+        <section class="b-case b-case_reverse">
+            <span class="b-anchor" id="case"></span>
+            <picture class="b-case__pic">
+                <source media="(max-width: 767px)" srcset="resources/img/cases/case-amazon-sm.webp" type="image/webp">
+                <source media="(max-width: 767px)" srcset="resources/img/cases/case-amazon-sm.jpg" type="image/jpeg">
+                <source media="(min-width: 768px)" srcset="resources/img/cases/case-amazon.webp" type="image/webp">
+                <source media="(min-width: 768px)" srcset="resources/img/cases/case-amazon.jpg" type="image/jpeg">
+                <img src="resources/img/cases/case-amazon.jpg" alt="">
+            </picture>
+            <div class="b-case__container">
+                <div class="b-case__wr">
+                    <div class="b-case__content">
+                        <div class="b-case__common">
+                            <img class="b-case__logo" alt=""
+                                 src="resources/img/cases/case-logo-hp.svg">
+
+                            <!--
+                                                            <svg class="b-case__logo" width="40" height="40">
+                                                                <use xlink:href="#case-logo-hp"></use>
+                                                            </svg>
+                            -->
+                            <div class="b-case__title_common">Case Study</div>
+                        </div>
+                        <div class="b-case__title">HOW GEPARD SET UP HP DATA TRANSFORMATION FOR AMAZON</div>
+                        <a href="resources/img/case-amazon.jpg" class="b-btn" download>
+                                <span class="b-btn__wr_inner">
+                                    <span class="b-btn__inner">Download</span>
+                                </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="b-case b-case_dark">
+            <picture class="b-case__pic">
+                <source media="(max-width: 767px)" srcset="resources/img/cases/case-gs1-sm.webp" type="image/webp">
+                <source media="(max-width: 767px)" srcset="resources/img/cases/case-gs1-sm.jpg" type="image/jpeg">
+                <source media="(min-width: 768px)" srcset="resources/img/cases/case-gs1.webp" type="image/webp">
+                <source media="(min-width: 768px)" srcset="resources/img/cases/case-gs1.jpg" type="image/jpeg">
+                <img src="resources/img/cases/case-gs1.jpg" alt="">
+            </picture>
+            <div class="b-case__container">
+                <div class="b-case__wr">
+                    <div class="b-case__content">
+                        <div class="b-case__common">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="resources/img/cases/case-logo-gs1-white.svg">
+                                <source media="(min-width: 768px)" srcset="resources/img/cases/case-logo-gs1-pink.svg">
+                                <img class="b-case__logo" src="resources/img/cases/case-logo-gs1-pink.svg" alt="">
+                            </picture>
+                            <!--
+                                                            <img class="b-case__logo" alt=""
+                                                                   src="resources/img/cases/case-logo-gs1.svg">
+                            -->
+                            <div class="b-case__title_common">Case Study</div>
+                        </div>
+                        <div class="b-case__title">How GS1 Created the Fashion Base Portal for Dutch Suppliers</div>
+                        <a href="resources/img/case-gsi.jpg" class="b-btn_dark" download>
+                                <span class="b-btn__wr_inner">
+                                    <span class="b-btn__inner">Download</span>
+                                </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="b-contactus">
             <div class="b-contactus__wr">
