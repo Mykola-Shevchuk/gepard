@@ -156,6 +156,10 @@
         font-size: 22px;
         font-weight: 500;
         text-transform: uppercase;
+
+        @include media('<tabletSm') {
+            margin-left: 5px;
+        }
     }
 
     &__container {
@@ -214,21 +218,61 @@
 }
 
 .b-b2b-case {
-    &__content {
-        width: 310px;
-
+    &__container {
         @include media('<tabletSm') {
-            width: 100%;
-        }
-
-        p {
-            font-weight: 500;
-            font-size: 22px;
-            line-height: 1.5;
+            padding-bottom: 0;
         }
 
         &-using {
-            width: 500px;
+            display: flex;
+        }
+    }
+
+    &__wr {
+        &-using {
+            justify-content: flex-end;
+            display: flex;
+            margin-top: 100px;
+
+            @include media('<tabletSm') {
+                margin-top: 0;
+                padding: 0 17px;
+            }
+        }
+    }
+
+    &__content {
+        width: auto;
+
+        &-using {
+            margin: 0 3%;
+
+            @include media('<desktop') {
+                margin: 0 30px 0 0;
+            }
+
+            @include media('<tabletSm') {
+                margin-right: 0;
+            }
+        }
+
+        &-text {
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 1.5;
+            width: 277px;
+
+            @include media('<tabletSm') {
+                width: 100%;
+            }
+
+            &-using {
+                width: 515px;
+
+                @include media('<tabletSm') {
+                    width: 100%;
+                }
+            }
         }
     }
 
@@ -236,13 +280,26 @@
         display: flex;
         margin-top: 20px;
         flex-wrap: wrap;
+        width: 450px;
+
+        @include media('<tabletSm') {
+            width: 100%;
+        }
+
+        &-using {
+            width: 515px;
+
+            @include media('<tabletSm') {
+                width: 100%;
+            }
+        }
     }
 
     &__icon {
         margin-bottom: 40px;
 
         &:not(:last-child) {
-            margin-right: 23px;
+            margin-right: 50px;
         }
 
         img {

@@ -4385,6 +4385,9 @@ a.b-footer__link {
     font-size: 22px;
     font-weight: 500;
     text-transform: uppercase; }
+    @media (max-width: 767px) {
+      .b-b2b-advantages__title {
+        margin-left: 5px; } }
   .b-b2b-advantages__container {
     padding: 50px 0 35px; }
     @media (max-width: 1279px) {
@@ -4427,29 +4430,69 @@ a.b-footer__link {
   -o-object-position: center;
      object-position: center; }
 
-.b-b2b-case__content {
-  width: 310px; }
+@media (max-width: 767px) {
+  .b-b2b-case__container {
+    padding-bottom: 0; } }
+
+.b-b2b-case__container-using {
+  display: -webkit-flex;
+  display: flex; }
+
+.b-b2b-case__wr-using {
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  display: -webkit-flex;
+  display: flex;
+  margin-top: 100px; }
   @media (max-width: 767px) {
-    .b-b2b-case__content {
-      width: 100%; } }
-  .b-b2b-case__content p {
+    .b-b2b-case__wr-using {
+      margin-top: 0;
+      padding: 0 17px; } }
+
+.b-b2b-case__content {
+  width: auto; }
+  .b-b2b-case__content-using {
+    margin: 0 3%; }
+    @media (max-width: 1279px) {
+      .b-b2b-case__content-using {
+        margin: 0 30px 0 0; } }
+    @media (max-width: 767px) {
+      .b-b2b-case__content-using {
+        margin-right: 0; } }
+  .b-b2b-case__content-text {
     font-weight: 500;
     font-size: 22px;
-    line-height: 1.5; }
-  .b-b2b-case__content-using {
-    width: 500px; }
+    line-height: 1.5;
+    width: 277px; }
+    @media (max-width: 767px) {
+      .b-b2b-case__content-text {
+        width: 100%; } }
+    .b-b2b-case__content-text-using {
+      width: 515px; }
+      @media (max-width: 767px) {
+        .b-b2b-case__content-text-using {
+          width: 100%; } }
 
 .b-b2b-case__icons {
   display: -webkit-flex;
   display: flex;
   margin-top: 20px;
   -webkit-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  width: 450px; }
+  @media (max-width: 767px) {
+    .b-b2b-case__icons {
+      width: 100%; } }
+  .b-b2b-case__icons-using {
+    width: 515px; }
+    @media (max-width: 767px) {
+      .b-b2b-case__icons-using {
+        width: 100%; } }
 
 .b-b2b-case__icon {
   margin-bottom: 40px; }
   .b-b2b-case__icon:not(:last-child) {
-    margin-right: 23px; }
+    margin-right: 50px; }
   .b-b2b-case__icon img {
     height: 60px; }
 
