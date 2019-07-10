@@ -4299,6 +4299,8 @@ a.b-footer__link {
   display: flex;
   -webkit-justify-content: space-between;
           justify-content: space-between;
+  -webkit-align-items: center;
+          align-items: center;
   padding-top: 80px;
   padding-bottom: 80px; }
   @media (max-width: 767px) {
@@ -4309,12 +4311,28 @@ a.b-footer__link {
               align-items: center; } }
 
 .b-b2b-brands__brand {
-  width: 25%; }
+  width: 25%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center; }
   @media (max-width: 767px) {
     .b-b2b-brands__brand {
       width: 100%;
       max-width: 280px;
       padding: 30px 0; } }
+  .b-b2b-brands__brand > img {
+    height: 70px; }
+    @media (max-width: 1023px) {
+      .b-b2b-brands__brand > img {
+        height: 50px; } }
+    @media (max-width: 767px) {
+      .b-b2b-brands__brand > img {
+        height: 70px; } }
+  .b-b2b-brands__brand-second {
+    height: 35px; }
+  .b-b2b-brands__brand-third {
+    height: 50px; }
 
 .b-b2b-infografic {
   padding: 80px 0;
@@ -4490,10 +4508,22 @@ a.b-footer__link {
         width: 100%; } }
 
 .b-b2b-case__icon {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center; }
   .b-b2b-case__icon:not(:last-child) {
     margin-right: 50px; }
   .b-b2b-case__icon img {
     height: 60px; }
+  .b-b2b-case__icon-using:not(:last-child) {
+    margin-right: 35px; }
+  .b-b2b-case__icon-small img {
+    height: 32px; }
+  .b-b2b-case__icon-small-amazon img {
+    height: 40px; }
+  .b-b2b-case__icon-small-lazada img {
+    height: 50px; }
 
 /*# sourceMappingURL=styles.css.map */

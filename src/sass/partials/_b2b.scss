@@ -42,6 +42,7 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding-top: 80px;
         padding-bottom: 80px;
 
@@ -55,11 +56,34 @@
 
     &__brand {
         width: 25%;
+        display: flex;
+        justify-content: center;
 
         @include media('<tabletSm') {
             width: 100%;
             max-width: 280px;
             padding: 30px 0;
+        }
+
+        & > img {
+            height: 70px;
+
+            @include media('<tabletLg') {
+                height: 50px;
+            }
+
+            @include media('<tabletSm') {
+                height: 70px;
+            }
+
+        }
+
+        &-second {
+            height: 35px;
+        }
+
+        &-third {
+            height: 50px;
         }
     }
 }
@@ -297,6 +321,8 @@
 
     &__icon {
         margin-bottom: 40px;
+        display: flex;
+        align-items: center;
 
         &:not(:last-child) {
             margin-right: 50px;
@@ -304,6 +330,30 @@
 
         img {
             height: 60px;
+        }
+
+        &-using {
+            &:not(:last-child) {
+                margin-right: 35px;
+            }
+        }
+
+        &-small {
+            img {
+                height: 32px;
+            }
+        }
+
+        &-small-amazon {
+            img {
+                height: 40px;
+            }
+        }
+
+        &-small-lazada {
+            img {
+                height: 50px;
+            }
         }
     }
 }
