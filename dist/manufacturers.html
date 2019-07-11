@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manufacturers</title>
+    <meta property="og:url" content="https://gepard.io/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Content Syndication Platform | Gepard"/>
+    <meta property="og:description"
+          content="Gepard content syndication platform empowers manufacturers and retailers to deliver the product information consumers demand."/>
+    <meta property="og:image" content="http://gepard.io/img/blog/Gepard_Content_Syndication_Platform_Home.png"/>
+
+    <link rel="icon" href="resources/img/favicon/favicon.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="resources/img/favicon/favicon@2x.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="resources/img/favicon/favicon@6x.png" type="image/png" sizes="96x96"/>
+    <link rel="icon" href="resources/img/favicon/favicon@12x.png" type="image/png" sizes="192x192"/>
+
+    <!--
+        <script type="module" src="js/index.mjs" defer></script>
+        <script nomodule src="js/index.js" defer></script>
+    -->
+    <script src="js/index.js" defer></script>
+
+    <!-- Code snippet to speed up Google Fonts rendering: googlefonts.3perf.com -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link rel="preload"
+          href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,500,600,700&amp;subset=cyrillic"
+          as="fetch" crossorigin="anonymous">
+    <script type="text/javascript">
+      !function (e, n, t) {
+        "use strict";
+        var o = "https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,500,600,700&amp;subset=cyrillic",
+          r = "__3perf_googleFontsStylesheet";
+
+        function c(e) {
+          (n.head || n.body).appendChild(e)
+        }
+
+        function a() {
+          var e = n.createElement("link");
+          e.href = o, e.rel = "stylesheet", c(e)
+        }
+
+        function f(e) {
+          if (!n.getElementById(r)) {
+            var t = n.createElement("style");
+            t.id = r, c(t)
+          }
+          n.getElementById(r).innerHTML = e
+        }
+
+        e.FontFace && e.FontFace.prototype.hasOwnProperty("display") ? (t[r] && f(t[r]), fetch(o).then(function (e) {
+          return e.text()
+        }).then(function (e) {
+          return e.replace(/@font-face {/g, "@font-face{font-display:swap;")
+        }).then(function (e) {
+          return t[r] = e
+        }).then(f).catch(a)) : a()
+      }(window, document, localStorage);
+    </script>
+    <!-- End of code snippet for Google Fonts -->
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<img src="resources/sprite.svg" class="svg_injectable" style="display: none" alt="">
+
+<div class="b-container_page">
+    <header class="b-header js-header">
+        <div class="b-header__wr">
+            <div class="b-header__logo">
+                <a href="#" class="b-link_logo">
+                    <svg width="150" height="60">
+                        <use xlink:href="#gepard-logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <nav class="b-header__nav js-header__nav">
+                <ul class="b-nav__menu">
+                    <li>
+                        <span class="b-nav__link">Products</span>
+                        <ul class="b-nav__submenu">
+                            <li class="b-submenu__back">
+                                <span class="b-nav__link_sub js-submenu__link_back">Back</span>
+                            </li>
+                            <li>
+                                <a href="#pim" class="b-nav__link_sub js-link_anchor">pim</a>
+                            </li>
+                            <li>
+                                <a href="#syndicator" class="b-nav__link_sub js-link_anchor">syndicator</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="b-nav__link">Retailers</span>
+                        <ul class="b-nav__submenu">
+                            <li>
+                                <a href="#online-stores" class="b-nav__link_sub js-link_anchor">Online Stores</a>
+                            </li>
+                            <li>
+                                <a href="#marketplaces" class="b-nav__link_sub js-link_anchor">Marketplaces</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="b-nav__link">Manufacturers</a>
+                    </li>
+                    <li>
+                        <a href="#" class="b-nav__link">Company</a>
+                    </li>
+                    <li>
+                        <span class="b-nav__link">Resources</span>
+                        <ul class="b-nav__submenu">
+                            <li>
+                                <a href="#case" class="b-nav__link_sub js-link_anchor">Case Studies</a>
+                            </li>
+                            <li>
+                                <a href="#" class="b-nav__link_sub">Whitepapers</a>
+                            </li>
+                            <li>
+                                <a href="#" class="b-nav__link_sub">Blog</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="b-nav__link">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="b-toggler_menu js-toggler_menu">
+                    <span>
+                        <span></span>
+                    </span>
+            </button>
+        </div>
+    </header>
+    <section class="b-content">
+        <section class="b-hero">
+            <div class="b-container_video">
+                <picture class="b-video__bg ">
+                    <source media="(max-width: 767px)" srcset="resources/img/manufacturers-small.webp"
+                            type="image/webp">
+                    <source media="(max-width: 767px)" srcset="resources/img/manufacturers-small.jpg"
+                            type="image/jpeg">
+                    <source media="(min-width: 768px)" srcset="resources/img/manufacturers.webp"
+                            type="image/webp">
+                    <source media="(min-width: 768px)" srcset="resources/img/manufacturers.jpg"
+                            type="image/jpeg">
+                    <img src="resources/img/manufacturers.jpg" alt="">
+                </picture>
+                <div class="b-article__content b-manufacturers__header-content">
+                    <div class="b-manufacturers__header-content-container">
+                        <div class="b-manufacturers__header-content-title">Brand product content & sales is never the top priority for retailers</div>
+                        <div class="b-manufacturers__header-content-subtitle">Learn how to deal with it below</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="b-badges b-badge-syndicator">
+        <div class="b-badge-syndicator__title b-retailers-badge__title">Brand Content Efficiency Checklist</div>
+        <div class="b-badges__wr">
+            <div class="b-badge b-retailers-badge__item">
+                <div class="b-badge__img">
+                    <svg width="45" height="45">
+                        <use xlink:href="#wishlist"></use>
+                    </svg>
+                </div>
+                <p class="b-badge__descr">Do retailers receive 100% of your brand data?</p>
+            </div>
+            <div class="b-badge b-retailers-badge__item">
+                <div class="b-badge__img">
+                    <svg width="45" height="45">
+                        <use xlink:href="#flyers"></use>
+                    </svg>
+                </div>
+                <p class="b-badge__descr">Are your products always published in time?</p>
+            </div>
+            <div class="b-badge b-retailers-badge__item">
+                <div class="b-badge__img">
+                    <svg width="45" height="45">
+                        <use xlink:href="#competitor-analysis"></use>
+                    </svg>
+                </div>
+                <p class="b-badge__descr">How often customers prefer your competitors on marketplaces?</p>
+            </div>
+        </div>
+    </section>
+    <section class="b-targets">
+        <div class="b-targets__wr">
+            <div class="b-targets__title b-retailers-target__title">How Gepard helps</div>
+            <div class="b-targets__container">
+                <span class="b-target">
+                            <span class="b-target__header">
+                                <span class="b-target__wr_icon">
+                                    <svg class="b-target__icon" width="45" height="41">
+                                        <use xlink:href="#mobile-shopping"></use>
+                                    </svg>
+                                </span>
+                                <span class="b-target__title b-software__item-title">Boost Your Revenue</span>
+                            </span>
+                            <p class="b-target__descr b-retailers-target__desc">Syndicate product pages that drive sales everywhere
+</p>
+                        </span>
+                <span class="b-target">
+                            <span class="b-anchor" id="marketplaces"></span>
+                            <span class="b-target__header">
+                                <span class="b-target__wr_icon">
+                                    <svg class="b-target__icon" width="40" height="41">
+                                        <use xlink:href="#timeline"></use>
+                                    </svg>
+                                </span>
+                                <span class="b-target__title b-software__item-title">Expand Your Market Share</span>
+                            </span>
+                            <p class="b-target__descr b-retailers-target__desc">Overcome your competitors with a wider range of products supported by high-quality descriptions</p>
+                        </span>
+                <span class="b-target">
+                            <span class="b-anchor" id="online-stores"></span>
+                            <span class="b-target__header">
+                                <span class="b-target__wr_icon">
+                                    <svg class="b-target__icon" width="47" height="40">
+                                        <use xlink:href="#trolley"></use>
+                                    </svg>
+                                </span>
+                                <span class="b-target__title b-software__item-title">Speed-Up Your
+Market Penetration</span>
+                            </span>
+                            <p class="b-target__descr b-retailers-target__desc">Provide your product descriptions within the unique requirements of the every marketplace worldwide quickly and automatically</p>
+                        </span>
+            </div>
+        </div>
+    </section>
+    <section class="b-gepard-schema">
+        <div class="b-gepard-schema__title">Send your product page to every retailer automatically</div>
+        <picture>
+            <source srcset="resources/img/content-syndicator.webp" type="image/webp">
+            <source srcset="resources/img/content-syndicator.png" type="image/png">
+            <img src="resources/img/content-syndicator.png" alt="content syndication tools and platforms, product content syndication software" class="b-article__img b-gepard-schema__img">
+        </picture>
+    </section>
+    <section class="b-tabs">
+        <div class="b-tabs__container">
+            <div class="b-tabs__title">Automated syndication to every channel, reseller, and marketplace</div>
+            <div>
+                <ul class="b-tabs-list">
+                    <li class="tab-link">
+                        <span class="current" data-tab="tab-1">Marketplaces</span>
+                    </li>
+                    <li class="tab-link">
+                        <span class="" data-tab="tab-2">Retailers & Wholesalers</span>
+                    </li>
+                    <li class="tab-link">
+                        <span class="" data-tab="tab-3">PIM & PXM solutions</span>
+                    </li>
+                    <li class="tab-link">
+                        <span class="" data-tab="tab-4">Webshops</span>
+                    </li>
+                    <li class="tab-link">
+                        <span class="" data-tab="tab-5">Strategic Partners</span>
+                    </li>
+                    <li class="tab-link">
+                        <span class="" data-tab="tab-6">Content providers</span>
+                    </li>
+                </ul>
+                <div class="b-tab-content">
+                    <div id="tab-1" class="b-tab-content__item current">
+                        <div class="b-banners-container">
+                            <div class="b-tab-content__item-banners">
+                                <img class="b-integration" alt="Lazada" src="resources/img/tabs/lazada.svg">
+                            </div>
+                            <div class="b-tab-content__item-banners">
+                                <img class="b-integration" alt="Walmart" src="resources/img/tabs/walmart.svg">
+                            </div>
+                            <div class="b-tab-content__item-banners">
+                                <img class="b-integration" alt="Amazon" src="resources/img/tabs/amazon.svg">
+                            </div>
+                            <div class="b-tab-content__item-banners">
+                                <img class="b-integration" alt="Ebay" src="resources/img/tabs/ebay.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="b-tab-content__item">
+                        Tab 2
+                    </div>
+                    <div id="tab-3" class="b-tab-content__item">
+                        Tab 3
+                    </div>
+                    <div id="tab-4" class="b-tab-content__item">
+                        Tab 4
+                    </div>
+                    <div id="tab-5" class="b-tab-content__item">
+                        Tab 5
+                    </div>
+                    <div id="tab-6" class="b-tab-content__item">
+                        Tab 6
+                    </div>
+                </div>
+                <div class="b-tabs__subtitle">Gepard platform offers a wide range of content syndication tools in
+                    integration with world's top retailers and solution providers.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="b-contactus">
+        <div class="b-contactus__wr">
+            <div class="b-contactus__title">Contact Us</div>
+            <form class="b-form_contactus js-form_contactus is-popup_visible" novalidate method="POST"
+                  action='/contactus/'>
+                <div class="b-contactus__block_checkboxes">
+                    <div class="b-contactus__title_sub">Interested in*</div>
+                    <label class="b-label_checkbox">
+                        <input type="checkbox" name="interests" value="syndication">
+                        <span class="b-label__text">Data Syndication &amp; Transformation</span>
+                    </label>
+                    <label class="b-label_checkbox">
+                        <input type="checkbox" name="interests" value="pim">
+                        <span class="b-label__text">PIM (Product Information Management)</span>
+                    </label>
+                    <label class="b-label_checkbox">
+                        <input type="checkbox" name="interests" value="custom">
+                        <span class="b-label__text">Custom Solution</span>
+                    </label>
+                    <label class="b-label_checkbox">
+                        <input type="checkbox" name="interests" value="other">
+                        <span class="b-label__text">Other Inquiry</span>
+                    </label>
+                </div>
+                <div class="b-contactus__block_email">
+                    <div class="b-contactus__title_sub">Business Email*</div>
+                    <div class="b-wr_input">
+                        <input type="email" class="b-input" placeholder="email" name="email" required>
+                        <svg width="34" height="34">
+                            <use xlink:href="#email"></use>
+                        </svg>
+                    </div>
+                    <button class="b-btn_dark" type="submit">
+                                <span class="b-btn__wr_inner">
+                                    <span class="b-btn__inner">Get in Touch</span>
+                                </span>
+                    </button>
+                </div>
+                <div class="b-popups">
+                    <div class="b-form__popup b-popup b-popup_error js-popup_invalid">
+                        <div class="b-popup__wr_icon">
+                            <svg width="33" height="28">
+                                <use xlink:href="#popup-warning"></use>
+                            </svg>
+                        </div>
+                        <span class="b-popup__text js-popup__text">Please enter a valid email and choose at least one category of interest</span>
+                        <!--
+                                                    <button class="b-popup__close js-popup_close" type="button">
+                                                        <svg width="28" height="28">
+                                                            <use xlink:href="#popup-close"></use>
+                                                        </svg>
+                                                    </button>
+                        -->
+                    </div>
+                    <div class="b-form__popup b-popup b-popup_error js-popup_error">
+                        <div class="b-popup__wr_icon">
+                            <svg width="33" height="28">
+                                <use xlink:href="#popup-warning"></use>
+                            </svg>
+                        </div>
+                        <span class="b-popup__text js-popup__text">Please try again later.</span>
+                        <button class="b-popup__close js-popup_close" type="button">
+                            <svg width="28" height="28">
+                                <use xlink:href="#popup-close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="b-form__popup b-popup b-popup_success js-popup_success">
+                        <div class="b-popup__wr_icon">
+                            <svg width="28" height="28">
+                                <use xlink:href="#popup-success"></use>
+                            </svg>
+                        </div>
+                        <span class="b-popup__text js-popup__text">Thank you for getting in touch. We'll get back to you in up to 2 business days.</span>
+                        <button class="b-popup__close js-popup_close" type="button">
+                            <svg width="28" height="28">
+                                <use xlink:href="#popup-close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+<footer class="b-footer">
+    <div class="b-footer__wr">
+        <div class="b-footer__nav">
+            <ul class="b-footer__list b-footer__list_contacts">
+                <li>
+                    <!--                        <span class="b-footer__link b-footer__link_contact">4A Mytropolyta Andreia Sheptytskoho Street, Kyiv, 02002, Ukraine</span>-->
+                    <span class="b-footer__link b-footer__link_contact">Copyright © 2019 Gepard.  All rights reserved</span>
+                </li>
+                <!--
+                                    <li>
+                                        <a href="tel:" class="b-footer__link b-footer__link_contact">phone</a>
+                                    </li>
+                -->
+                <li>
+                    <a href="mailto:info@gepard.io" class="b-footer__link b-footer__link_contact">info@gepard.io</a>
+                </li>
+            </ul>
+            <!--
+                            <ul class="b-footer__list b-footer__list_links">
+                                <li>
+                                    <a href="#" class="b-footer__link b-footer__link_nav">PRIVACY POLICY</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="b-footer__link b-footer__link_nav">TERMS OF SERVICE</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="b-footer__link b-footer__link_nav">SITEMAP</a>
+                                </li>
+                            </ul>
+            -->
+        </div>
+        <ul class="b-footer__nav_social">
+            <li>
+                <a href="" class="b-footer__link_social b-footer__link">
+                    <svg width="51" height="51">
+                        <use xlink:href="#linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="" class="b-footer__link_social b-footer__link">
+                    <svg width="51" height="51">
+                        <use xlink:href="#facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="" class="b-footer__link_social b-footer__link">
+                    <svg width="51" height="51">
+                        <use xlink:href="#twitter"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+</div>
+
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+
+<!--
+    <script>
+        if (typeof jQuery == 'undefined') {
+            document.write(unescape("%3Cscript src='/node_modules/jquery/dist/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+-->
+</body>
+</html>
