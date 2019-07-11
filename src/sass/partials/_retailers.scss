@@ -55,3 +55,53 @@
         margin-bottom: 0;
     }
 }
+
+.b-retailers-gepard-stat {
+    &__content {
+        margin: 10%;
+        width: 350px;
+        font-size: 36px;
+        font-weight: 600;
+
+        @include media('<tabletSm') {
+            margin: 0;
+            padding: 70px 20px 30px 20px;
+            width: 100%;
+            font-size: 26px;
+            font-weight: 400;
+        }
+    }
+}
+
+.b-retailers-hero {
+    min-height: 680px;
+
+    @include media('<tabletSm') {
+        min-height: auto;
+    }
+}
+
+.b-gepard-schema {
+    padding: 50px 30px;
+
+    @include gradient__active_angled;
+
+    &__title {
+        font-size: 26px;
+        font-weight: 500;
+        color: $white;
+        text-align: center;
+        max-width: 500px;
+        margin: 0 auto;
+        line-height: 1.5;
+
+        @include media('<tabletSm') {
+            font-size: 22px;
+        }
+    }
+
+    &__img {
+        min-width: 100%;
+        margin-bottom: 0;
+    }
+}

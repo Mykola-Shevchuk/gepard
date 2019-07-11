@@ -4567,4 +4567,41 @@ a.b-footer__link {
 .b-retailers-target__desc {
   margin-bottom: 0; }
 
+.b-retailers-gepard-stat__content {
+  margin: 10%;
+  width: 350px;
+  font-size: 36px;
+  font-weight: 600; }
+  @media (max-width: 767px) {
+    .b-retailers-gepard-stat__content {
+      margin: 0;
+      padding: 70px 20px 30px 20px;
+      width: 100%;
+      font-size: 26px;
+      font-weight: 400; } }
+
+.b-retailers-hero {
+  min-height: 680px; }
+  @media (max-width: 767px) {
+    .b-retailers-hero {
+      min-height: auto; } }
+
+.b-gepard-schema {
+  padding: 50px 30px;
+  background-image: linear-gradient(36deg, #78cba2, #00b39e); }
+  .b-gepard-schema__title {
+    font-size: 26px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.5; }
+    @media (max-width: 767px) {
+      .b-gepard-schema__title {
+        font-size: 22px; } }
+  .b-gepard-schema__img {
+    min-width: 100%;
+    margin-bottom: 0; }
+
 /*# sourceMappingURL=styles.css.map */
