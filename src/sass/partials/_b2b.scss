@@ -248,7 +248,10 @@
         }
 
         &-using {
-            display: flex;
+            @include media('<desktop') {
+                position: static;
+                padding-top: 20px;
+            }
         }
     }
 
@@ -258,7 +261,7 @@
             display: flex;
             margin-top: 100px;
 
-            @include media('<tabletSm') {
+            @include media('<desktop') {
                 margin-top: 0;
                 padding: 0 17px;
             }
@@ -267,18 +270,6 @@
 
     &__content {
         width: auto;
-
-        &-using {
-            margin: 0 3%;
-
-            @include media('<desktop') {
-                margin: 0 30px 0 0;
-            }
-
-            @include media('<tabletSm') {
-                margin-right: 0;
-            }
-        }
 
         &-text {
             font-weight: 500;
@@ -293,7 +284,7 @@
             &-using {
                 width: 515px;
 
-                @include media('<tabletSm') {
+                @include media('<desktop') {
                     width: 100%;
                 }
             }
@@ -313,7 +304,7 @@
         &-using {
             width: 515px;
 
-            @include media('<tabletSm') {
+            @include media('<desktop') {
                 width: 100%;
             }
         }
@@ -357,5 +348,3 @@
         }
     }
 }
-
-
