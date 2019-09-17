@@ -50,7 +50,7 @@
   & span {
     transition: color 0.3s, opacity 0.3s;
     position: relative;
-    
+
     &:hover {
       cursor: pointer;
       color: $active;
@@ -59,7 +59,7 @@
 
   & span.current {
     color: $active;
-    
+
     &::after {
       content: '';
       position: absolute;
@@ -71,7 +71,7 @@
       transition: opacity 0.3s;
     }
 
-    
+
   }
 }
 
@@ -79,14 +79,14 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  
+
   &__item {
     display: none;
 
     &.current {
       display: inherit;
     }
-    
+
     &-banners {
       width: 195px;
       height: 90px;
@@ -95,9 +95,17 @@
       justify-content: center;
       align-items: center;
       margin: 0 10px 30px 0;
-      
+
+      @include media('<phoneLg') {
+        width: calc(50% - 30px);
+
+        &:nth-child(even) {
+          margin-right: 0;
+        }
+      }
+
       & img {
-        width: 195px;
+        width: 100%;
       }
     }
   }

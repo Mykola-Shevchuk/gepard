@@ -166,11 +166,17 @@
 }
 
 .b-resources-join {
+    position: relative;
+    min-height: 259px;
+    padding: 95px 0 100px;
+
+    @include media('<desktop'){
+        min-height: 0;
+        padding: 60px 0 75px;
+    }
+
     &:hover {
-       .b-resources-join__title,
-       .b-resources-join__subtitle {
-           color: $white;
-       }
+        background-color: $white;
     }
 
     &__title {
@@ -222,6 +228,21 @@
             padding: 20px;
             width: 100%;
         }
+
+        .b-case {
+            overflow: hidden;
+            max-height: 300px;
+
+            @include media('<tabletSm') {
+                max-height: initial;
+            }
+        }
+
+        .b-case__container {
+            @include media('<tabletSm') {
+                background-color: $white;
+            }
+        }
     }
 
     &__toggler {
@@ -254,6 +275,21 @@
 
         @include media('<tabletLg') {
             max-height: 740px;
+            height: auto;
+        }
+
+        @include media('<tabletSm') {
+            max-height: 1340px;
+            height: auto;
+        }
+
+        @include media('<phoneLg') {
+            max-height: 1250px;
+            height: auto;
+        }
+
+        @include media('<phoneMd') {
+            max-height: 1280px;
             height: auto;
         }
     }

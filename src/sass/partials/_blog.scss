@@ -90,10 +90,10 @@
         height: 150px;
         border-radius: 50%;
         border: 3px solid rgba(0, 179, 158, .1);
-        background-image: url("../resources/img/blog/avatar.jpg");
         background-clip: content-box;
         background-position: center center;
         background-size: contain;
+        overflow: hidden;
 
         @include media('<tabletLg') {
             margin-left: 25px;
@@ -111,6 +111,13 @@
             min-height: 75px;
             height: 75px;
             width: 75px;
+        }
+
+        & img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            object-position: center;
         }
     }
 
@@ -153,7 +160,7 @@
     padding: 0 20px 40px 20px;
 
     &__socials {
-        width: 40%;
+        width: 230px;
 
         @include media('<tabletSm') {
             display: none;
@@ -202,6 +209,24 @@
     }
 
     &__text {
+        width: calc(100% - 230px);
+
+        @include media('<tabletSm') {
+            width: 100%;
+        }
+
+        & ul, ol {
+            padding-left: 40px;
+        }
+
+        & ul {
+            list-style: disc;
+        }
+
+        & ol {
+            list-style: decimal;
+        }
+
         & p {
             padding: 15px 0;
 
